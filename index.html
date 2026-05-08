@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Myvelle Hair Kulture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400&amp;family=Epilogue:ital,wght@0,700;0,800;1,700&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#1e0c22",
+                      "on-secondary": "#3c0090",
+                      "primary-container": "#ff4dcc",
+                      "surface-bright": "#46324a",
+                      "on-secondary-fixed": "#23005b",
+                      "on-error": "#690005",
+                      "tertiary": "#c6c6c6",
+                      "outline-variant": "#56404c",
+                      "on-secondary-container": "#ddcdff",
+                      "surface-container-lowest": "#18071d",
+                      "inverse-primary": "#b1008b",
+                      "inverse-on-surface": "#3d2941",
+                      "on-surface": "#f7d9f8",
+                      "tertiary-container": "#979797",
+                      "on-primary": "#60004a",
+                      "surface-container": "#2b192f",
+                      "on-primary-container": "#5f0049",
+                      "on-primary-fixed-variant": "#88006a",
+                      "surface-dim": "#1e0c22",
+                      "tertiary-fixed-dim": "#c6c6c6",
+                      "primary-fixed": "#ffd8ec",
+                      "error": "#ffb4ab",
+                      "on-tertiary-fixed-variant": "#464747",
+                      "error-container": "#93000a",
+                      "secondary-container": "#7000ff",
+                      "on-primary-fixed": "#3b002d",
+                      "on-secondary-fixed-variant": "#5700c9",
+                      "on-error-container": "#ffdad6",
+                      "surface": "#1e0c22",
+                      "surface-container-high": "#36233a",
+                      "secondary-fixed": "#e9ddff",
+                      "surface-tint": "#ffaedd",
+                      "surface-container-low": "#27152b",
+                      "secondary-fixed-dim": "#d1bcff",
+                      "surface-container-highest": "#422e45",
+                      "on-surface-variant": "#ddbecd",
+                      "inverse-surface": "#f7d9f8",
+                      "surface-variant": "#422e45",
+                      "on-tertiary": "#2f3131",
+                      "on-background": "#f7d9f8",
+                      "tertiary-fixed": "#e3e2e2",
+                      "on-tertiary-container": "#2e3030",
+                      "primary-fixed-dim": "#ffaedd",
+                      "secondary": "#d1bcff",
+                      "primary": "#ffaedd",
+                      "outline": "#a48997",
+                      "on-tertiary-fixed": "#1a1c1c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "12px",
+                      "gutter": "20px",
+                      "lg": "48px",
+                      "md": "24px",
+                      "margin": "24px",
+                      "xs": "4px",
+                      "xl": "80px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Epilogue"
+                      ],
+                      "label-sm": [
+                              "Space Grotesk"
+                      ],
+                      "headline-lg": [
+                              "Epilogue"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* ── Nav Logo ── */
+        @keyframes textShine {
+            0%   { background-position: 140% center; }
+            35%  { background-position: -40% center; }
+            100% { background-position: -40% center; }
+        }
+        .nav-logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .nav-logo-text {
+            font-family: 'Epilogue', serif;
+            font-size: 28px;
+            font-weight: 800;
+            font-style: italic;
+            letter-spacing: -0.02em;
+            background: linear-gradient(
+                90deg,
+                #ffaedd 0%,
+                #ffaedd 36%,
+                #ffc8e8 43%,
+                #ffe4f5 50%,
+                #ffc8e8 57%,
+                #ffaedd 64%,
+                #ffaedd 100%
+            );
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textShine 5s linear infinite;
+        }
+        @media (max-width: 767px) {
+            .nav-logo-text { font-size: 20px; }
+        }
+
+        #mobileMenuButton .hamburger-bar:nth-child(1) { transform: translateY(0) rotate(0); }
+        #mobileMenuButton .hamburger-bar:nth-child(2) { opacity: 1; transform: scaleX(1); }
+        #mobileMenuButton .hamburger-bar:nth-child(3) { transform: translateY(0) rotate(0); }
+
+        #mobileMenuButton[aria-expanded="true"] .hamburger-bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+            box-shadow: 0 0 8px rgba(255,77,204,0.6);
+        }
+        #mobileMenuButton[aria-expanded="true"] .hamburger-bar:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        #mobileMenuButton[aria-expanded="true"] .hamburger-bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+            box-shadow: 0 0 8px rgba(255,77,204,0.6);
+        }
+.glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        .chrome-gradient {
+            background: linear-gradient(135deg, #c6c6c6 0%, #ff4dcc 50%, #c6c6c6 100%);
+            background-size: 200% 200%;
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(255, 77, 204, 0.5);
+        }
+        .noise-bg {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .glass-card-dark {
+            background: rgba(43, 25, 47, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 77, 204, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+        }
+        .gallery-card {
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-card:hover {
+            border-color: #7000ff;
+            box-shadow: 0 0 25px rgba(112, 0, 255, 0.5);
+            transform: translateY(-5px);
+        }
+        .gallery-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%);
+            transform: rotate(45deg) translate(-100%, -100%);
+            transition: transform 0.6s ease-out;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .gallery-card:hover::after {
+            transform: rotate(45deg) translate(100%, 100%);
+        }
+        .glass-input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: rgba(30, 12, 34, 0.85) !important;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid rgba(164, 137, 151, 0.3);
+            color: #f7d9f8 !important;
+            transition: all 0.3s ease;
+            -webkit-text-fill-color: #f7d9f8;
+        }
+        .glass-input::placeholder { color: rgba(247,217,248,0.35); }
+        .glass-input:focus {
+            border-color: #ff4dcc;
+            box-shadow: 0 0 15px rgba(255, 77, 204, 0.3);
+            outline: none;
+            background: rgba(30, 12, 34, 0.95) !important;
+        }
+        /* ── Desktop sizes (default) ── */
+        .hero-headline    { font-size: 48px; }
+        .hero-sub         { font-size: 32px; }
+        .section-heading  { font-size: 40px; }
+        .booking-heading  { font-size: 36px; }
+        .cta-heading      { font-size: 64px; }
+
+        /* ── Mobile overrides only ── */
+        @media (max-width: 767px) {
+            .hero-headline    { font-size: clamp(28px, 8vw, 40px) !important; }
+            .hero-sub         { font-size: clamp(18px, 5vw, 26px) !important; }
+            .section-heading  { font-size: clamp(22px, 6.5vw, 32px) !important; }
+            .booking-heading  { font-size: clamp(20px, 6vw, 28px) !important; }
+            .cta-heading      { font-size: clamp(26px, 8.5vw, 44px) !important; }
+            .booking-card-pad { padding: 20px !important; }
+            .section-py       { padding-top: 48px !important; padding-bottom: 48px !important; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- Ambient Gradient Background -->
+<div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
+<div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-secondary-container/20 blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-primary-container/10 blur-[150px]"></div>
+</div>
+<!-- TopNavBar -->
+<nav class="bg-background/20 backdrop-blur-md font-body-md docked full-width top-0 sticky z-50 transition-all duration-300 border-b border-white/5">
+<div class="flex justify-between items-center w-full px-gutter py-md max-w-7xl mx-auto lg:px-xl">
+<a class="nav-logo-link" href="#" id="navLogo">
+  <span class="nav-logo-text">Myvelle Hair Kulture</span>
+</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-margin">
+<a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#about">About</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#gallery">Gallery</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#policies">Policies</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#booking">Book Now</a>
+</div>
+<button class="hidden md:flex items-center justify-center px-lg py-sm rounded-full bg-primary/10 border border-primary/30 text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300 shadow-[0_0_15px_rgba(255,77,204,0.2)]">
+<span class="font-bold">Book Now</span>
+</button>
+<!-- Mobile Menu Toggle -->
+<button aria-controls="mobileMenu" aria-expanded="false" class="md:hidden text-primary w-10 h-10 flex flex-col items-center justify-center gap-[6px] relative" id="mobileMenuButton" type="button">
+  <span class="hamburger-bar block w-6 h-[2px] rounded-full bg-primary transition-all duration-300 origin-center"></span>
+  <span class="hamburger-bar block w-6 h-[2px] rounded-full bg-primary transition-all duration-300 origin-center"></span>
+  <span class="hamburger-bar block w-6 h-[2px] rounded-full bg-primary transition-all duration-300 origin-center"></span>
+</button>
+</div>
+<div class="md:hidden hidden border-t border-white/10 bg-background/95 backdrop-blur-xl px-gutter pb-md" id="mobileMenu">
+<div class="flex flex-col gap-sm pt-md">
+<a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#about">About</a>
+<a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#gallery">Gallery</a>
+<a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#policies">Policies</a>
+<a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#booking">Book Now</a>
+<a class="mobile-menu-link mt-xs flex items-center justify-center rounded-full bg-primary/10 border border-primary/30 px-lg py-sm text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300" href="#booking">Book Your Appointment</a>
+</div>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center px-gutter py-xl overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Brand Logo Background" class="w-full h-full object-cover opacity-30 mix-blend-screen" src="myvellehairkulture.webp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center gap-margin">
+<div class="inline-block px-sm py-xs rounded-full glass-panel border-primary/30 mb-sm">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                        Dallas, TX
+                    </span>
+</div>
+<h1 class="font-headline-xl text-on-surface flex flex-col gap-sm drop-shadow-2xl hero-headline">
+<span class="text-on-surface-variant italic font-normal hero-sub">Your Fav Teen</span>
+<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-container to-secondary">Dallas Hairstylist</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-sm">
+                    Where extra is the baseline. Specializing in flawless braids, seamless installs, and main character energy.
+                </p>
+<div class="mt-lg flex flex-col sm:flex-row gap-margin items-center">
+<a href="#booking" class="px-xl py-md rounded-full chrome-gradient text-on-primary-container font-label-sm text-label-sm uppercase tracking-widest neon-glow hover:scale-95 transition-transform duration-150 ease-in-out font-bold w-full sm:w-auto relative overflow-hidden group flex items-center justify-center">
+<span class="relative z-10">Book Your Appointment</span>
+<div class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
+</a>
+<a class="font-label-sm text-label-sm text-primary hover:text-primary-container underline underline-offset-4 transition-colors uppercase tracking-widest" href="#policies">
+                        Read Policies First
+                    </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="px-gutter py-xl max-w-7xl mx-auto relative z-10 section-py" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="flex flex-col gap-md">
+<h2 class="font-headline-lg text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary font-bold section-heading">About Myvelle Hair Kulture</h2>
+<p class="font-body-md text-[18px] text-on-surface-variant leading-relaxed">
+                        Myvelle Hair Kulture is a Dallas/DeSoto based hairstylist brand focused on clean parts, cute styles, flawless installs, and confidence-boosting looks. Every appointment is made to feel personal, polished, and photo-ready.
+                    </p>
+<div class="grid grid-cols-2 gap-sm mt-md">
+<div class="glass-card-dark rounded-xl p-md flex flex-col items-center justify-center text-center group hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[32px] text-primary-container mb-xs group-hover:scale-110 transition-transform">content_cut</span>
+<span class="font-label-sm text-primary uppercase tracking-wider">Clean Parts</span>
+</div>
+<div class="glass-card-dark rounded-xl p-md flex flex-col items-center justify-center text-center group hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[32px] text-secondary mb-xs group-hover:scale-110 transition-transform">auto_awesome</span>
+<span class="font-label-sm text-secondary uppercase tracking-wider">Cute Styles</span>
+</div>
+<div class="glass-card-dark rounded-xl p-md flex flex-col items-center justify-center text-center group hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[32px] text-primary-container mb-xs group-hover:scale-110 transition-transform">favorite</span>
+<span class="font-label-sm text-primary uppercase tracking-wider">Confidence Boost</span>
+</div>
+<div class="glass-card-dark rounded-xl p-md flex flex-col items-center justify-center text-center group hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[32px] text-secondary mb-xs group-hover:scale-110 transition-transform">location_on</span>
+<span class="font-label-sm text-secondary uppercase tracking-wider">Dallas / DeSoto</span>
+</div>
+</div>
+</div>
+<div class="relative w-full aspect-square rounded-2xl overflow-hidden glass-card-dark p-2">
+<img alt="Myvelle Hair Kulture logo" class="w-full h-full object-contain rounded-xl bg-black/30 p-4" src="myvellehairkulture.webp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="px-gutter py-xl max-w-7xl mx-auto" id="gallery">
+<div class="flex flex-col items-center text-center mb-xl">
+<h2 class="font-headline-lg text-[40px] text-on-surface mb-xs">Signature Looks</h2>
+<div class="h-1 w-24 bg-gradient-to-r from-primary-container to-secondary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Gallery Items -->
+<div class="gallery-card rounded-2xl glass-card-dark aspect-square group cursor-pointer">
+<img alt="Knotless Braids" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="656239237_18092891060115871_2636022838108583992_n.jpg"/>
+<div class="absolute inset-0 bg-background/40 group-hover:bg-background/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 right-0 p-md bg-gradient-to-t from-background to-transparent flex flex-col items-center justify-end h-1/2">
+<span class="font-headline-lg text-[20px] font-bold text-on-surface mb-xs group-hover:-translate-y-2 transition-transform duration-300">Knotless Braids</span>
+<span class="font-label-sm text-primary uppercase opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300 delay-100">View Style</span>
+</div>
+</div>
+<div class="gallery-card rounded-2xl glass-card-dark aspect-square group cursor-pointer">
+<img alt="Sew-ins &amp; Wigs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="524352909_17902394919228802_5756912547636403200_n.jpg"/>
+<div class="absolute inset-0 bg-background/40 group-hover:bg-background/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 right-0 p-md bg-gradient-to-t from-background to-transparent flex flex-col items-center justify-end h-1/2">
+<span class="font-headline-lg text-[20px] font-bold text-on-surface mb-xs group-hover:-translate-y-2 transition-transform duration-300">Sew-ins &amp; Wigs</span>
+<span class="font-label-sm text-primary uppercase opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300 delay-100">View Style</span>
+</div>
+</div>
+<div class="gallery-card rounded-2xl glass-card-dark aspect-square group cursor-pointer">
+<img alt="Color &amp; Curls" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="474068019_17879423694228802_4381312249934958261_n.jpg"/>
+<div class="absolute inset-0 bg-background/40 group-hover:bg-background/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 right-0 p-md bg-gradient-to-t from-background to-transparent flex flex-col items-center justify-end h-1/2">
+<span class="font-headline-lg text-[20px] font-bold text-on-surface mb-xs group-hover:-translate-y-2 transition-transform duration-300">Color &amp; Curls</span>
+<span class="font-label-sm text-primary uppercase opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300 delay-100">View Style</span>
+</div>
+</div>
+<div class="gallery-card rounded-2xl glass-card-dark aspect-square group cursor-pointer">
+<img alt="Trims &amp; Blowouts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="541536287_17906221995228802_5266461622850669319_n.jpg"/>
+<div class="absolute inset-0 bg-background/40 group-hover:bg-background/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 right-0 p-md bg-gradient-to-t from-background to-transparent flex flex-col items-center justify-end h-1/2">
+<span class="font-headline-lg text-[20px] font-bold text-on-surface mb-xs group-hover:-translate-y-2 transition-transform duration-300">Trims &amp; Blowouts</span>
+<span class="font-label-sm text-primary uppercase opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300 delay-100">View Style</span>
+</div>
+</div>
+<div class="gallery-card rounded-2xl glass-card-dark aspect-square group cursor-pointer">
+<img alt="Soft Glam Styles" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="503149906_17895521241228802_6862498345921263236_n.jpg"/>
+<div class="absolute inset-0 bg-background/40 group-hover:bg-background/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 right-0 p-md bg-gradient-to-t from-background to-transparent flex flex-col items-center justify-end h-1/2">
+<span class="font-headline-lg text-[20px] font-bold text-on-surface mb-xs group-hover:-translate-y-2 transition-transform duration-300">Soft Glam Styles</span>
+<span class="font-label-sm text-primary uppercase opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300 delay-100">View Style</span>
+</div>
+</div>
+<div class="gallery-card rounded-2xl glass-card-dark aspect-square group cursor-pointer">
+<img alt="Custom Looks" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="610153896_1206009084212109_8530969856231068753_n.jpg"/>
+<div class="absolute inset-0 bg-background/40 group-hover:bg-background/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 right-0 p-md bg-gradient-to-t from-background to-transparent flex flex-col items-center justify-end h-1/2">
+<span class="font-headline-lg text-[20px] font-bold text-on-surface mb-xs group-hover:-translate-y-2 transition-transform duration-300">Custom Looks</span>
+<span class="font-label-sm text-primary uppercase opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300 delay-100">View Style</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Policies Section -->
+<style>
+  @keyframes borderSpin {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  @keyframes floatIcon {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+  }
+  @keyframes revealCard {
+    from { opacity: 0; transform: translateY(40px) scale(0.96); }
+    to   { opacity: 1; transform: translateY(0px) scale(1); }
+  }
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 12px rgba(255,77,204,0.3); }
+    50% { box-shadow: 0 0 28px rgba(255,77,204,0.7), 0 0 50px rgba(112,0,255,0.3); }
+  }
+  @keyframes autoShimmer {
+    0%          { left: -60%; opacity: 0; }
+    4%          { opacity: 1; }
+    28%         { left: 120%; opacity: 1; }
+    33%, 100%   { left: 120%; opacity: 0; }
+  }
+  /* hidden by default */
+  .rule-card {
+    position: relative;
+    border-radius: 20px;
+    background: rgba(43,25,47,0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.06);
+    overflow: hidden;
+    opacity: 0;
+    /* transition only applied once revealed */
+  }
+  /* entry animation phase — no hover/ongoing effects yet */
+  .rule-card.visible {
+    animation: revealCard 0.6s cubic-bezier(0.34,1.2,0.64,1) forwards;
+  }
+  /* settled state — animation done, hover + ongoing effects active */
+  .rule-card.revealed {
+    opacity: 1;
+    transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.35s ease;
+  }
+  .rule-card.revealed:hover,
+  .rule-card.revealed:active {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 30px var(--card-glow, rgba(255,77,204,0.2));
+  }
+
+  /* border gradient overlay */
+  .rule-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1.5px;
+    background: linear-gradient(135deg, var(--card-color, #ff4dcc), transparent 50%, var(--card-color, #ff4dcc));
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    animation: borderSpin 4s ease infinite;
+    pointer-events: none;
+  }
+  .rule-card.revealed::before { opacity: 0.45; }
+  .rule-card.revealed:hover::before,
+  .rule-card.revealed:active::before { opacity: 1; }
+
+  /* shimmer sweep */
+  .rule-card::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -60%;
+    width: 40%;
+    height: 160%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.09), transparent);
+    transform: rotate(20deg);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .rule-card.revealed::after {
+    animation: autoShimmer var(--shimmer-period, 5s) ease infinite;
+    animation-delay: var(--shimmer-delay, 0s);
+  }
+
+  /* icon */
+  .rule-icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--icon-bg, rgba(255,77,204,0.12));
+    border: 1px solid var(--icon-border, rgba(255,77,204,0.25));
+    transition: box-shadow 0.3s ease;
+  }
+  .rule-card.revealed .rule-icon-wrap {
+    animation: floatIcon 2.2s ease-in-out infinite;
+    animation-delay: var(--shimmer-delay, 0s);
+  }
+  .rule-card.revealed:hover .rule-icon-wrap,
+  .rule-card.revealed:active .rule-icon-wrap {
+    box-shadow: 0 0 18px var(--card-glow, rgba(255,77,204,0.4));
+  }
+
+  .rule-step {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    opacity: 0.06;
+    color: var(--card-color, #ff4dcc);
+    transition: opacity 0.3s ease;
+    user-select: none;
+    pointer-events: none;
+  }
+  .rule-card.revealed:hover .rule-step,
+  .rule-card.revealed:active .rule-step { opacity: 0.14; }
+  .rules-title-glow {
+    text-shadow: 0 0 40px rgba(255,77,204,0.4);
+  }
+</style>
+
+<section class="px-gutter py-xl max-w-7xl mx-auto" id="policies">
+  <div class="flex flex-col items-center text-center mb-xl">
+    <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-sm flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+      Know Before You Book
+    </span>
+    <h2 class="font-headline-xl text-on-surface rules-title-glow mb-sm section-heading">The Rules</h2>
+    <div class="h-[2px] w-32 rounded-full" style="background: linear-gradient(to right, #7000ff, #ff4dcc, #7000ff); background-size: 200%; animation: borderSpin 3s ease infinite;"></div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md" id="rulesGrid">
+
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#ff4dcc; --card-glow:rgba(255,77,204,0.25); --icon-bg:rgba(255,77,204,0.1); --icon-border:rgba(255,77,204,0.3); animation-delay:0s; --shimmer-delay:0.2s; --shimmer-period:5s">
+      <span class="rule-step">01</span>
+      <div class="rule-icon-wrap">
+        <span class="material-symbols-outlined text-[28px]" style="color:#ff4dcc">monetization_on</span>
+      </div>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Booking Fee Required</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">A non-refundable fee is required to secure your appointment spot.</p>
+    </div>
+
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#d1bcff; --card-glow:rgba(209,188,255,0.2); --icon-bg:rgba(209,188,255,0.1); --icon-border:rgba(209,188,255,0.3); animation-delay:0.1s; --shimmer-delay:1.2s; --shimmer-period:5.5s">
+      <span class="rule-step">02</span>
+      <div class="rule-icon-wrap" style="--icon-bg:rgba(209,188,255,0.1); --icon-border:rgba(209,188,255,0.3);">
+        <span class="material-symbols-outlined text-[28px]" style="color:#d1bcff">forum</span>
+      </div>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">DM Confirmation</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">All bookings must be confirmed via Instagram Direct Message.</p>
+    </div>
+
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#ffaedd; --card-glow:rgba(255,174,221,0.2); --icon-bg:rgba(255,174,221,0.1); --icon-border:rgba(255,174,221,0.3); animation-delay:0.2s; --shimmer-delay:2.3s; --shimmer-period:4.8s">
+      <span class="rule-step">03</span>
+      <div class="rule-icon-wrap">
+        <span class="material-symbols-outlined text-[28px]" style="color:#ffaedd">pin_drop</span>
+      </div>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Location</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Services provided in DeSoto / Dallas area. Address sent upon confirmation.</p>
+    </div>
+
+    <div class="rule-card p-lg flex flex-col gap-sm md:col-start-1 md:col-end-2 lg:col-start-2 lg:col-end-3" style="--card-color:#7000ff; --card-glow:rgba(112,0,255,0.25); --icon-bg:rgba(112,0,255,0.12); --icon-border:rgba(112,0,255,0.3); animation-delay:0.3s; --shimmer-delay:0.6s; --shimmer-period:6s">
+      <span class="rule-step">04</span>
+      <div class="rule-icon-wrap">
+        <span class="material-symbols-outlined text-[28px]" style="color:#b085ff">payments</span>
+      </div>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Payment</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Cash is highly preferred for the remaining balance. Small fee for digital payments.</p>
+    </div>
+
+    <div class="rule-card p-lg flex flex-col gap-sm md:col-start-2 md:col-end-3 lg:col-start-3 lg:col-end-4" style="--card-color:#ffb4ab; --card-glow:rgba(255,180,171,0.2); --icon-bg:rgba(255,180,171,0.1); --icon-border:rgba(255,180,171,0.3); animation-delay:0.4s; --shimmer-delay:1.8s; --shimmer-period:5.2s">
+      <span class="rule-step">05</span>
+      <div class="rule-icon-wrap">
+        <span class="material-symbols-outlined text-[28px]" style="color:#ffb4ab">schedule</span>
+      </div>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Respect My Time</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Late fees apply after 10 minutes. Cancellations need 24hr notice.</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  (function() {
+    const cards = document.querySelectorAll('#rulesGrid .rule-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const card = entry.target;
+          card.classList.add('visible');
+          card.addEventListener('animationend', () => {
+            card.classList.remove('visible');
+            card.classList.add('revealed');
+          }, { once: true });
+          observer.unobserve(card);
+        }
+      });
+    }, { threshold: 0.15 });
+    cards.forEach(card => observer.observe(card));
+  })();
+</script>
+<!-- Booking Form -->
+<section class="px-gutter py-xl max-w-4xl mx-auto section-py" id="booking">
+<div class="glass-card-dark rounded-[32px] p-xl relative overflow-hidden booking-card-pad">
+<div class="absolute top-[-50px] right-[-50px] w-48 h-48 bg-primary-container/20 rounded-full blur-[60px] pointer-events-none"></div>
+<div class="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-secondary/20 rounded-full blur-[60px] pointer-events-none"></div>
+<div class="relative z-10 text-center mb-xl">
+<h2 class="font-headline-lg text-on-surface mb-sm booking-heading">Request an Appointment</h2>
+<p class="text-on-surface-variant">Fill out the details below. Myvelle will slide in your DMs to confirm.</p>
+</div>
+<form class="relative z-10 flex flex-col gap-md" id="bookingForm" onsubmit="event.preventDefault(); document.getElementById('successMessage').classList.remove('hidden'); document.getElementById('formContent').classList.add('hidden');">
+<div class="flex flex-col gap-md" id="formContent">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-primary uppercase ml-2">Full Name</label>
+<input class="glass-input rounded-xl px-md py-3 w-full" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-primary uppercase ml-2">Instagram Username</label>
+<input class="glass-input rounded-xl px-md py-3 w-full" placeholder="@yourhandle" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-primary uppercase ml-2">Phone Number</label>
+<input class="glass-input rounded-xl px-md py-3 w-full" placeholder="(555) 000-0000" required="" type="tel"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-primary uppercase ml-2">Service Wanted</label>
+<select class="glass-input rounded-xl px-md py-3 w-full appearance-none" required="">
+<option disabled="" selected="" value="">Select a style...</option>
+<option value="knotless">Knotless Braids</option>
+<option value="sewin">Sew-in / Wig Install</option>
+<option value="color">Color &amp; Silk Press</option>
+<option value="trim">Maintenance Trim</option>
+<option value="custom">Custom Look</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-primary uppercase ml-2">Preferred Date</label>
+<input class="glass-input rounded-xl px-md py-3 w-full [color-scheme:dark]" required="" type="date"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-primary uppercase ml-2">Preferred Time</label>
+<input class="glass-input rounded-xl px-md py-3 w-full [color-scheme:dark]" required="" type="time"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-primary uppercase ml-2">Hair Inspiration / Notes</label>
+<textarea class="glass-input rounded-xl px-md py-3 w-full h-24 resize-none" placeholder="Tell me about your hair length, condition, or specific style details..."></textarea>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-primary uppercase ml-2">Inspiration Photo</label>
+<div class="glass-input rounded-xl p-md flex flex-col items-center justify-center border-dashed border-2 cursor-pointer hover:bg-surface-container/50 transition-colors">
+<span class="material-symbols-outlined text-[32px] text-on-surface-variant mb-2">upload_file</span>
+<span class="text-sm text-on-surface-variant">Click to upload or drag and drop</span>
+<input accept="image/*" class="hidden" type="file"/>
+</div>
+</div>
+<div class="flex items-center gap-sm mt-sm">
+<input class="w-5 h-5 rounded border-outline-variant bg-surface-container checked:bg-primary-container text-primary-container focus:ring-primary-container focus:ring-offset-background" id="agreement" required="" type="checkbox"/>
+<label class="text-sm text-on-surface-variant cursor-pointer select-none" for="agreement">I agree to pay the non-refundable booking fee and have read the policies.</label>
+</div>
+<button class="mt-md w-full px-xl py-4 rounded-xl chrome-gradient text-on-primary-container font-label-sm text-[14px] uppercase tracking-widest neon-glow hover:scale-[0.98] transition-transform duration-150 ease-in-out font-bold" type="submit">
+                            Send Booking Request
+                        </button>
+</div>
+<div class="hidden flex-col items-center justify-center py-xl text-center gap-md" id="successMessage">
+<div class="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-sm shadow-[0_0_30px_rgba(255,174,221,0.3)]">
+<span class="material-symbols-outlined text-[40px] text-primary">check_circle</span>
+</div>
+<h3 class="font-headline-lg text-[28px] text-on-surface">Request Received!</h3>
+<p class="text-on-surface-variant text-lg max-w-md">Your request has been received. Myvelle will confirm through DM shortly.</p>
+</div>
+</form>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="px-gutter py-[100px] max-w-7xl mx-auto text-center relative">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] h-full bg-primary-container/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center gap-md">
+<h2 class="font-headline-xl text-transparent bg-clip-text bg-gradient-to-b from-white to-primary-container italic font-bold cta-heading">Ready for your Myvelle moment?</h2>
+<p class="font-body-md text-[20px] text-on-surface-variant mb-md">Book your next look and step out photo-ready.</p>
+<div class="flex flex-col sm:flex-row gap-margin justify-center w-full">
+<a class="px-xl py-md rounded-full bg-transparent border-2 border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:shadow-[0_0_20px_rgba(255,174,221,0.4)] transition-all duration-300 font-bold" href="#">
+                        Book Through Instagram
+                    </a>
+<a class="px-xl py-md rounded-full bg-surface-container border border-outline-variant text-on-surface font-label-sm text-label-sm uppercase tracking-widest hover:bg-surface-container-high transition-all duration-300 font-bold" href="#gallery">
+                        View Gallery
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest text-primary font-body-md text-body-md full-width bottom-0 bg-gradient-to-t from-background to-surface-container-lowest flat no shadows relative z-10 border-t border-outline-variant/20 mt-xl">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-gutter py-xl gap-md max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-sm">
+<span class="font-headline-lg text-headline-lg text-primary-container italic tracking-tighter drop-shadow-[0_0_8px_rgba(255,174,221,0.3)]">Myvelle Hair Kulture</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">stay extra.</span>
+</div>
+<div class="flex flex-wrap justify-center gap-margin">
+<a class="text-on-surface-variant hover:text-primary-container underline underline-offset-4 transition-all hover:opacity-80 font-label-sm text-label-sm uppercase tracking-widest" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary-container underline underline-offset-4 transition-all hover:opacity-80 font-label-sm text-label-sm uppercase tracking-widest" href="#">TikTok</a>
+<a class="text-on-surface-variant hover:text-primary-container underline underline-offset-4 transition-all hover:opacity-80 font-label-sm text-label-sm uppercase tracking-widest" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary-container underline underline-offset-4 transition-all hover:opacity-80 font-label-sm text-label-sm uppercase tracking-widest" href="#policies">Policies</a>
+</div>
+<div class="text-on-surface-variant text-sm text-center md:text-right">
+                © 2024 Myvelle Hair Kulture. stay extra.
+            </div>
+</div>
+</footer>
+<script>
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+    function setMobileMenu(open) {
+        mobileMenu.classList.toggle('hidden', !open);
+        mobileMenuButton.setAttribute('aria-expanded', String(open));
+    }
+
+    mobileMenuButton?.addEventListener('click', () => {
+        const isOpen = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        setMobileMenu(!isOpen);
+    });
+
+    mobileMenuLinks.forEach((link) => {
+        link.addEventListener('click', () => setMobileMenu(false));
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768) {
+            setMobileMenu(false);
+        }
+    });
+</script>
+<script>
+(function () {
+  const isTouch = 'ontouchstart' in window;
+
+  const maxScroll = () => document.documentElement.scrollHeight - window.innerHeight;
+  const clamp     = (v, lo, hi) => Math.min(Math.max(v, lo), hi);
+
+  // ── Logo → smooth scroll to top ──
+  document.getElementById('navLogo')?.addEventListener('click', e => {
+    e.preventDefault();
+    if (isTouch) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      target = 0;
+    }
+  });
+
+  // ── Anchor smooth scroll — works on ALL devices ──
+  document.querySelectorAll('a[href^="#"]:not(#navLogo)').forEach(link => {
+    link.addEventListener('click', e => {
+      const el = document.querySelector(link.getAttribute('href'));
+      if (!el) return;
+      e.preventDefault();
+      const dest = clamp(el.getBoundingClientRect().top + window.scrollY - 80, 0, maxScroll());
+      if (isTouch) {
+        // Mobile: native smooth scroll
+        window.scrollTo({ top: dest, behavior: 'smooth' });
+      } else {
+        // Desktop: hand off to lerp loop
+        target = dest;
+      }
+    });
+  });
+
+  // ── Desktop-only: lerp momentum scroll ──
+  if (isTouch) return;
+
+  document.documentElement.style.scrollBehavior = 'auto';
+
+  let target  = window.scrollY;
+  let current = window.scrollY;
+  const ease  = 0.072;
+  const lerp  = (a, b, t) => a + (b - a) * t;
+
+  window.addEventListener('wheel', e => {
+    e.preventDefault();
+    target = clamp(target + e.deltaY * 1.4, 0, maxScroll());
+  }, { passive: false });
+
+  window.addEventListener('keydown', e => {
+    const line = 60;
+    const page = window.innerHeight * 0.88;
+    const map  = {
+      ArrowDown: line, ArrowUp: -line,
+      PageDown: page,  PageUp: -page,
+      ' ': e.shiftKey ? -page : page,
+      Home: -maxScroll(), End: maxScroll()
+    };
+    if (!(e.key in map)) return;
+    e.preventDefault();
+    target = clamp(target + map[e.key], 0, maxScroll());
+  });
+
+  (function tick() {
+    current = lerp(current, target, ease);
+    window.scrollTo(0, Math.abs(current - target) < 0.1 ? (current = target) : current);
+    requestAnimationFrame(tick);
+  })();
+})();
+</script>
+</body></html>
