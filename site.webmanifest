@@ -1,0 +1,13 @@
+{
+  "name": "Myvelle Hair Kulture",
+  "short_name": "Myvelle",
+  "description": "Luxury braiding & hair services by Myvelle Hair Kulture.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e0c22",
+  "theme_color": "#ffaedd",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

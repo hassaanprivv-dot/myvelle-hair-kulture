@@ -1,137 +1,51 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
+<html class="dark" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Myvelle Hair Kulture</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<!-- ── Primary Meta ── -->
+<title>Myvelle Hair Kulture — Luxury Braiding & Hair Services</title>
+<meta name="description" content="Knotless braids, stitch braids, wig installs, quick weaves & more. Book your appointment with Myvelle Hair Kulture today."/>
+<meta name="theme-color" content="#ffaedd"/>
+
+<!-- ── Favicon ── -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+<link rel="manifest" href="site.webmanifest"/>
+
+<!-- ── Open Graph ── -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Myvelle Hair Kulture"/>
+<meta property="og:title" content="Myvelle Hair Kulture — Luxury Braiding & Hair Services"/>
+<meta property="og:description" content="Knotless braids, stitch braids, wig installs, quick weaves & more. Book your appointment today."/>
+<meta property="og:image" content="og-image.jpg"/>
+<meta property="og:image:width" content="1731"/>
+<meta property="og:image:height" content="909"/>
+<meta property="og:url" content="https://myvellehairkulture.netlify.app/"/>
+<meta property="og:logo" content="https://myvellehairkulture.netlify.app/apple-touch-icon.png"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- ── Twitter Card ── -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Myvelle Hair Kulture — Luxury Braiding & Hair Services"/>
+<meta name="twitter:description" content="Knotless braids, stitch braids, wig installs, quick weaves & more. Book your appointment today."/>
+<meta name="twitter:image" content="og-image.jpg"/>
+
+<!-- ── Compiled Tailwind CSS ── -->
+<link rel="stylesheet" href="styles.css"/>
+
+<!-- ── Google Fonts ── -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400&amp;family=Epilogue:ital,wght@0,700;0,800;1,700&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "background": "#1e0c22",
-                      "on-secondary": "#3c0090",
-                      "primary-container": "#ff4dcc",
-                      "surface-bright": "#46324a",
-                      "on-secondary-fixed": "#23005b",
-                      "on-error": "#690005",
-                      "tertiary": "#c6c6c6",
-                      "outline-variant": "#56404c",
-                      "on-secondary-container": "#ddcdff",
-                      "surface-container-lowest": "#18071d",
-                      "inverse-primary": "#b1008b",
-                      "inverse-on-surface": "#3d2941",
-                      "on-surface": "#f7d9f8",
-                      "tertiary-container": "#979797",
-                      "on-primary": "#60004a",
-                      "surface-container": "#2b192f",
-                      "on-primary-container": "#5f0049",
-                      "on-primary-fixed-variant": "#88006a",
-                      "surface-dim": "#1e0c22",
-                      "tertiary-fixed-dim": "#c6c6c6",
-                      "primary-fixed": "#ffd8ec",
-                      "error": "#ffb4ab",
-                      "on-tertiary-fixed-variant": "#464747",
-                      "error-container": "#93000a",
-                      "secondary-container": "#7000ff",
-                      "on-primary-fixed": "#3b002d",
-                      "on-secondary-fixed-variant": "#5700c9",
-                      "on-error-container": "#ffdad6",
-                      "surface": "#1e0c22",
-                      "surface-container-high": "#36233a",
-                      "secondary-fixed": "#e9ddff",
-                      "surface-tint": "#ffaedd",
-                      "surface-container-low": "#27152b",
-                      "secondary-fixed-dim": "#d1bcff",
-                      "surface-container-highest": "#422e45",
-                      "on-surface-variant": "#ddbecd",
-                      "inverse-surface": "#f7d9f8",
-                      "surface-variant": "#422e45",
-                      "on-tertiary": "#2f3131",
-                      "on-background": "#f7d9f8",
-                      "tertiary-fixed": "#e3e2e2",
-                      "on-tertiary-container": "#2e3030",
-                      "primary-fixed-dim": "#ffaedd",
-                      "secondary": "#d1bcff",
-                      "primary": "#ffaedd",
-                      "outline": "#a48997",
-                      "on-tertiary-fixed": "#1a1c1c"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "spacing": {
-                      "sm": "12px",
-                      "gutter": "20px",
-                      "lg": "48px",
-                      "md": "24px",
-                      "margin": "24px",
-                      "xs": "4px",
-                      "xl": "80px",
-                      "base": "8px"
-              },
-              "fontFamily": {
-                      "body-md": [
-                              "Plus Jakarta Sans"
-                      ],
-                      "headline-xl": [
-                              "Epilogue"
-                      ],
-                      "label-sm": [
-                              "Space Grotesk"
-                      ],
-                      "headline-lg": [
-                              "Epilogue"
-                      ]
-              },
-              "fontSize": {
-                      "body-md": [
-                              "16px",
-                              {
-                                      "lineHeight": "1.6",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "headline-xl": [
-                              "48px",
-                              {
-                                      "lineHeight": "1.1",
-                                      "letterSpacing": "-0.02em",
-                                      "fontWeight": "800"
-                              }
-                      ],
-                      "label-sm": [
-                              "12px",
-                              {
-                                      "lineHeight": "1",
-                                      "letterSpacing": "0.1em",
-                                      "fontWeight": "600"
-                              }
-                      ],
-                      "headline-lg": [
-                              "32px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "fontWeight": "700"
-                              }
-                      ]
-              }
-      },
-          },
-        }
-    </script>
 <style>
         /* ── Nav Logo ── */
         @keyframes textShine {
-            0%   { background-position: 140% center; }
-            35%  { background-position: -40% center; }
+            0%   { background-position: 160% center; }
+            22%  { background-position: -40% center; }
             100% { background-position: -40% center; }
         }
         .nav-logo-link {
@@ -162,9 +76,15 @@
             animation: textShine 5s linear infinite;
         }
         @media (max-width: 767px) {
-            .nav-logo-text { font-size: 20px; }
+            .nav-logo-text { font-size: 24px; }
         }
 
+        /* ── Hamburger bars — smoother transition ── */
+        #mobileMenuButton .hamburger-bar {
+            transition: transform 0.35s cubic-bezier(0.34,1.2,0.64,1),
+                        opacity 0.25s ease,
+                        box-shadow 0.3s ease;
+        }
         #mobileMenuButton .hamburger-bar:nth-child(1) { transform: translateY(0) rotate(0); }
         #mobileMenuButton .hamburger-bar:nth-child(2) { opacity: 1; transform: scaleX(1); }
         #mobileMenuButton .hamburger-bar:nth-child(3) { transform: translateY(0) rotate(0); }
@@ -174,12 +94,47 @@
             box-shadow: 0 0 8px rgba(255,77,204,0.6);
         }
         #mobileMenuButton[aria-expanded="true"] .hamburger-bar:nth-child(2) {
-            opacity: 0;
-            transform: scaleX(0);
+            opacity: 0; transform: scaleX(0);
         }
         #mobileMenuButton[aria-expanded="true"] .hamburger-bar:nth-child(3) {
             transform: translateY(-8px) rotate(-45deg);
             box-shadow: 0 0 8px rgba(255,77,204,0.6);
+        }
+
+        /* ── Mobile menu slide animation — mobile only ── */
+        @media (max-width: 767px) {
+            #mobileMenu {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                border-top-width: 0;
+                transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1),
+                            opacity 0.3s ease,
+                            border-top-width 0s 0.4s;
+            }
+            #mobileMenu.open {
+                max-height: 420px;
+                opacity: 1;
+                border-top-width: 1px;
+                transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1),
+                            opacity 0.3s ease,
+                            border-top-width 0s 0s;
+            }
+            /* staggered links */
+            #mobileMenu .mobile-menu-link,
+            #mobileMenu a:last-child {
+                opacity: 0;
+                transform: translateY(-6px);
+                transition: opacity 0.22s ease, transform 0.22s ease, background 0.2s, color 0.2s;
+            }
+            #mobileMenu.open .mobile-menu-link,
+            #mobileMenu.open a:last-child { opacity: 1; transform: translateY(0); }
+            #mobileMenu.open .mobile-menu-link:nth-child(1) { transition-delay: 0.07s; }
+            #mobileMenu.open .mobile-menu-link:nth-child(2) { transition-delay: 0.12s; }
+            #mobileMenu.open .mobile-menu-link:nth-child(3) { transition-delay: 0.17s; }
+            #mobileMenu.open .mobile-menu-link:nth-child(4) { transition-delay: 0.22s; }
+            #mobileMenu.open .mobile-menu-link:nth-child(5) { transition-delay: 0.27s; }
+            #mobileMenu.open a:last-child                   { transition-delay: 0.32s; }
         }
 .glass-panel {
             background: rgba(255, 255, 255, 0.03);
@@ -264,7 +219,7 @@
             .section-heading  { font-size: clamp(22px, 6.5vw, 32px) !important; }
             .booking-heading  { font-size: clamp(20px, 6vw, 28px) !important; }
             .cta-heading      { font-size: clamp(26px, 8.5vw, 44px) !important; }
-            .booking-card-pad { padding: 20px !important; }
+
             .section-py       { padding-top: 48px !important; padding-bottom: 48px !important; }
         }
     </style>
@@ -277,7 +232,7 @@
 </div>
 <!-- TopNavBar -->
 <nav class="bg-background/20 backdrop-blur-md font-body-md docked full-width top-0 sticky z-50 transition-all duration-300 border-b border-white/5">
-<div class="flex justify-between items-center w-full px-gutter py-md max-w-7xl mx-auto lg:px-xl">
+<div class="flex justify-between items-center w-full px-gutter py-sm max-w-7xl mx-auto lg:px-xl">
 <a class="nav-logo-link" href="#" id="navLogo">
   <span class="nav-logo-text">Myvelle Hair Kulture</span>
 </a>
@@ -285,12 +240,13 @@
 <div class="hidden md:flex items-center gap-margin">
 <a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#about">About</a>
 <a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#gallery">Gallery</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#services">Services</a>
 <a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#policies">Policies</a>
 <a class="text-on-surface hover:text-primary transition-colors duration-300 tracking-wide font-medium" href="#booking">Book Now</a>
 </div>
-<button class="hidden md:flex items-center justify-center px-lg py-sm rounded-full bg-primary/10 border border-primary/30 text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300 shadow-[0_0_15px_rgba(255,77,204,0.2)]">
+<a href="#booking" class="hidden md:flex items-center justify-center px-lg py-sm rounded-full bg-primary/10 border border-primary/30 text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300 shadow-[0_0_15px_rgba(255,77,204,0.2)]">
 <span class="font-bold">Book Now</span>
-</button>
+</a>
 <!-- Mobile Menu Toggle -->
 <button aria-controls="mobileMenu" aria-expanded="false" class="md:hidden text-primary w-10 h-10 flex flex-col items-center justify-center gap-[6px] relative" id="mobileMenuButton" type="button">
   <span class="hamburger-bar block w-6 h-[2px] rounded-full bg-primary transition-all duration-300 origin-center"></span>
@@ -298,10 +254,11 @@
   <span class="hamburger-bar block w-6 h-[2px] rounded-full bg-primary transition-all duration-300 origin-center"></span>
 </button>
 </div>
-<div class="md:hidden hidden border-t border-white/10 bg-background/95 backdrop-blur-xl px-gutter pb-md" id="mobileMenu">
+<div class="md:hidden border-t border-white/10 bg-background/95 backdrop-blur-xl px-gutter pb-md" id="mobileMenu">
 <div class="flex flex-col gap-sm pt-md">
 <a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#about">About</a>
 <a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#gallery">Gallery</a>
+<a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#services">Services</a>
 <a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#policies">Policies</a>
 <a class="mobile-menu-link rounded-xl px-md py-sm text-on-surface hover:bg-primary/10 hover:text-primary transition-colors duration-200 font-medium" href="#booking">Book Now</a>
 <a class="mobile-menu-link mt-xs flex items-center justify-center rounded-full bg-primary/10 border border-primary/30 px-lg py-sm text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300" href="#booking">Book Your Appointment</a>
@@ -334,8 +291,8 @@
 <span class="relative z-10">Book Your Appointment</span>
 <div class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
 </a>
-<a class="font-label-sm text-label-sm text-primary hover:text-primary-container underline underline-offset-4 transition-colors uppercase tracking-widest" href="#policies">
-                        Read Policies First
+<a class="font-label-sm text-label-sm text-primary hover:text-primary-container underline underline-offset-4 transition-colors uppercase tracking-widest" href="#services">
+                        View Services &amp; Rates
                     </a>
 </div>
 </div>
@@ -431,6 +388,410 @@
 </div>
 </div>
 </section>
+<!-- Services Section -->
+<style>
+  .svc-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  .svc-card:hover {
+    box-shadow: 0 0 22px rgba(255,77,204,0.25);
+  }
+  .svc-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(12,4,18,0.95);
+    display: flex;
+    flex-direction: column;
+    padding: 14px 18px 0;
+    overflow: hidden;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.34,1.1,0.64,1);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+  }
+  /* scrollable price list — only this area scrolls */
+  /* price list scroll area with fade indicator */
+  .svc-price-list-wrap {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    min-height: 0;
+  }
+  .svc-price-list-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 28px;
+    background: linear-gradient(to bottom, transparent, rgba(12,4,18,0.92));
+    pointer-events: none;
+    z-index: 2;
+  }
+  .svc-price-list {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 8px;
+  }
+  .svc-price-list::-webkit-scrollbar { display: none; }
+  /* only tap opens — no hover auto-open */
+  .svc-card.tapped .svc-overlay { transform: translateY(0); }
+  .svc-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    font-size: 13px;
+  }
+  .svc-price-row:last-child { border-bottom: none; }
+  .svc-price-label { color: rgba(247,217,248,0.72); }
+  .svc-price-val { color: #ffaedd; font-weight: 700; font-size: 14px; }
+  .svc-note { font-size: 11px; color: rgba(247,217,248,0.4); margin-top: 6px; text-align:center; }
+  /* mobile: compact everything to fit inside the square card */
+  @media (max-width: 640px) {
+    .svc-overlay { padding: 11px 15px 0; }
+    .svc-overlay > p { font-size: 12px !important; margin-bottom: 5px !important; }
+    .svc-price-row { padding: 3px 0; font-size: 12px; }
+    .svc-price-val { font-size: 12px !important; }
+    .svc-note { font-size: 10px; margin-top: 4px; }
+    .svc-close-hint { padding: 7px 0 7px; font-size: 10px; }
+  }
+  /* image clear by default, dims only when tapped */
+  .svc-bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; transition: opacity 0.35s ease; opacity:1; }
+  .svc-card.tapped .svc-bg { opacity: 0.12; }
+  .svc-label {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 14px 16px;
+    background: linear-gradient(to top, rgba(10,4,14,0.7) 0%, transparent 100%);
+    transition: opacity 0.3s ease;
+  }
+  .svc-card.tapped .svc-label { opacity: 0; pointer-events: none; }
+  .svc-category-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--tag-color, #ffaedd);
+    margin-bottom: 4px;
+  }
+  /* tap hint badge */
+  .svc-tap-hint {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255,77,204,0.18);
+    border: 1px solid rgba(255,77,204,0.45);
+    backdrop-filter: blur(8px);
+    border-radius: 999px;
+    padding: 5px 11px 5px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffaedd;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    pointer-events: none;
+    z-index: 20;
+  }
+  .svc-tap-hint svg { width: 14px; height: 14px; flex-shrink: 0; }
+  /* two internal states */
+  .hint-pricing {
+    display: flex; align-items: center; gap: 5px;
+    animation: hintPulse 2.2s ease-in-out infinite;
+  }
+  .hint-picture { display: none; align-items: center; gap: 5px; }
+  .svc-card.tapped .hint-pricing { display: none; }
+  .svc-card.tapped .hint-picture { display: none; }
+  .svc-card.tapped .svc-tap-hint { display: none; }
+  @keyframes hintPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.65; transform: scale(0.95); }
+  }
+  @keyframes svcRowIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .service-row { animation: svcRowIn 0.28s cubic-bezier(0.34,1.1,0.64,1) both; }
+  .service-remove-btn {
+    flex-shrink: 0; width: 36px; height: 36px; border-radius: 999px;
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .service-remove-btn:hover { background: rgba(255,77,100,0.18); border-color: rgba(255,77,100,0.4); }
+  /* booking form slot card */
+  .svc-slot-card {
+    background: rgba(255,174,221,0.05);
+    border: 1px solid rgba(255,174,221,0.22);
+    border-radius: 16px;
+    padding: 14px 14px 14px;
+    display: flex; flex-direction: column; gap: 10px;
+    position: relative;
+    animation: svcRowIn 0.3s cubic-bezier(0.34,1.1,0.64,1) both;
+  }
+  .svc-slot-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: rgba(255,174,221,0.7);
+  }
+  .svc-slot-remove {
+    position: absolute; top: 12px; right: 12px;
+    width: 26px; height: 26px; border-radius: 999px;
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: background 0.2s, border-color 0.2s;
+  }
+  .svc-slot-remove:hover { background: rgba(255,60,80,0.22); border-color: rgba(255,60,80,0.4); }
+  .svc-style-section { display: flex; flex-direction: column; gap: 6px; }
+  .svc-style-label {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: rgba(255,174,221,0.4);
+    padding-left: 2px;
+  }
+  /* close hint — flex child, always at bottom, never scrolls */
+  .svc-close-hint {
+    flex-shrink: 0;
+    padding: 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 11px;
+    color: rgba(247,217,248,0.45);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+</style>
+
+<section class="px-gutter py-xl max-w-7xl mx-auto" id="services">
+  <div class="flex flex-col items-center text-center mb-xl">
+    <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-sm flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+      Pricing
+    </span>
+    <h2 class="font-headline-lg text-on-surface section-heading mb-xs">Services & Rates</h2>
+    <div class="h-1 w-24 bg-gradient-to-r from-primary-container to-secondary rounded-full"></div>
+    <p class="text-on-surface-variant text-sm mt-sm">Tap a card to see pricing</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+
+    <!-- Knotless Braids -->
+    <div class="svc-card glass-card-dark aspect-square group">
+      <img class="svc-bg" src="svc-1.webp" alt="Knotless braids hairstyle" loading="lazy"/>
+      <div class="svc-label">
+        <div class="svc-category-tag" style="--tag-color:#ffaedd">Braids</div>
+        <span class="font-headline-lg text-[20px] font-bold text-on-surface">Knotless Braids</span>
+      </div>
+      <div class="svc-tap-hint">
+        <span class="hint-pricing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+          Tap for pricing
+        </span>
+        <span class="hint-picture">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Tap for picture
+        </span>
+      </div>
+      <div class="svc-overlay">
+        <p class="font-bold text-primary text-[15px] mb-2 tracking-wide uppercase">Knotless Braids</p>
+        <div class="svc-price-list-wrap"><div class="svc-price-list">
+          <div class="svc-price-row"><span class="svc-price-label">Large</span><span class="svc-price-val">$80</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Medium Large</span><span class="svc-price-val">$90</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Medium</span><span class="svc-price-val">$100</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">S-Medium</span><span class="svc-price-val">$120</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Small</span><span class="svc-price-val">$130</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">XS</span><span class="svc-price-val">$160</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Bob (Shoulder)</span><span class="svc-price-val">$110</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Braided Ponytail</span><span class="svc-price-val">$140</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Tribal / Lemonade</span><span class="svc-price-val">$130</span></div>
+          <p class="svc-note">+$10 per added length</p>
+        </div></div>
+        <div class="svc-close-hint">↓ tap to close</div>
+      </div>
+    </div>
+
+    <!-- Stitch Braids -->
+    <div class="svc-card glass-card-dark aspect-square group">
+      <img class="svc-bg" src="svc-2.webp" alt="Stitch braids hairstyle" loading="lazy"/>
+      <div class="svc-label">
+        <div class="svc-category-tag" style="--tag-color:#d1bcff">Braids</div>
+        <span class="font-headline-lg text-[20px] font-bold text-on-surface">Stitch Braids</span>
+      </div>
+      <div class="svc-tap-hint">
+        <span class="hint-pricing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+          Tap for pricing
+        </span>
+        <span class="hint-picture">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Tap for picture
+        </span>
+      </div>
+      <div class="svc-overlay">
+        <p class="font-bold text-[#d1bcff] text-[15px] mb-2 tracking-wide uppercase">Stitch Braids</p>
+        <div class="svc-price-list-wrap"><div class="svc-price-list">
+          <div class="svc-price-row"><span class="svc-price-label">6 Braids</span><span class="svc-price-val" style="color:#d1bcff">$60</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">8 Braids</span><span class="svc-price-val" style="color:#d1bcff">$80</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Small</span><span class="svc-price-val" style="color:#d1bcff">$115</span></div>
+          <p class="svc-note">+$10 per added length</p>
+        </div></div>
+        <div class="svc-close-hint">↓ tap to close</div>
+      </div>
+    </div>
+
+    <!-- Wig Installs -->
+    <div class="svc-card glass-card-dark aspect-square group">
+      <img class="svc-bg" src="svc-3.webp" alt="Wig install hairstyle" loading="lazy"/>
+      <div class="svc-label">
+        <div class="svc-category-tag" style="--tag-color:#fda4af">Installs</div>
+        <span class="font-headline-lg text-[20px] font-bold text-on-surface">Wig Installs</span>
+      </div>
+      <div class="svc-tap-hint">
+        <span class="hint-pricing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+          Tap for pricing
+        </span>
+        <span class="hint-picture">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Tap for picture
+        </span>
+      </div>
+      <div class="svc-overlay">
+        <p class="font-bold text-[#fda4af] text-[15px] mb-2 tracking-wide uppercase">Wig Installs</p>
+        <div class="svc-price-list-wrap"><div class="svc-price-list">
+          <div class="svc-price-row"><span class="svc-price-label">Full Install (any style)</span><span class="svc-price-val" style="color:#fda4af">$100</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Touch Up</span><span class="svc-price-val" style="color:#fda4af">$50</span></div>
+        </div></div>
+        <div class="svc-close-hint">↓ tap to close</div>
+      </div>
+    </div>
+
+    <!-- Quick Weaves -->
+    <div class="svc-card glass-card-dark aspect-square group">
+      <img class="svc-bg" src="svc-4.webp" alt="Quick weave hairstyle" loading="lazy"/>
+      <div class="svc-label">
+        <div class="svc-category-tag" style="--tag-color:#f9a8d4">Weaves</div>
+        <span class="font-headline-lg text-[20px] font-bold text-on-surface">Quick Weaves</span>
+      </div>
+      <div class="svc-tap-hint">
+        <span class="hint-pricing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+          Tap for pricing
+        </span>
+        <span class="hint-picture">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Tap for picture
+        </span>
+      </div>
+      <div class="svc-overlay">
+        <p class="font-bold text-[#f9a8d4] text-[15px] mb-2 tracking-wide uppercase">Quick Weaves</p>
+        <div class="svc-price-list-wrap"><div class="svc-price-list">
+          <div class="svc-price-row"><span class="svc-price-label">Middle Part</span><span class="svc-price-val" style="color:#f9a8d4">$100</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Side Part</span><span class="svc-price-val" style="color:#f9a8d4">$100</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Flip Over</span><span class="svc-price-val" style="color:#f9a8d4">$100</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Half Up Half Down</span><span class="svc-price-val" style="color:#f9a8d4">$110</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Jayda Wayda Style</span><span class="svc-price-val" style="color:#f9a8d4">$120</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">Cassie Hairstyle</span><span class="svc-price-val" style="color:#f9a8d4">$130</span></div>
+          <p class="svc-note">Recreates from highlights available</p>
+        </div></div>
+        <div class="svc-close-hint">↓ tap to close</div>
+      </div>
+    </div>
+
+    <!-- Men's Styles -->
+    <div class="svc-card glass-card-dark aspect-square group">
+      <img class="svc-bg" src="svc-5.webp" alt="Men's braids hairstyle" loading="lazy"/>
+      <div class="svc-label">
+        <div class="svc-category-tag" style="--tag-color:#93c5fd">Men's</div>
+        <span class="font-headline-lg text-[20px] font-bold text-on-surface">Men's Styles</span>
+      </div>
+      <div class="svc-tap-hint">
+        <span class="hint-pricing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+          Tap for pricing
+        </span>
+        <span class="hint-picture">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Tap for picture
+        </span>
+      </div>
+      <div class="svc-overlay">
+        <p class="font-bold text-[#93c5fd] text-[15px] mb-2 tracking-wide uppercase">Men's Styles</p>
+        <div class="svc-price-list-wrap"><div class="svc-price-list">
+          <div class="svc-price-row"><span class="svc-price-label">6 Stitch Braids</span><span class="svc-price-val" style="color:#93c5fd">$65</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">8 Stitch Braids</span><span class="svc-price-val" style="color:#93c5fd">$85</span></div>
+          <p class="svc-note">Shampoo preferred with all men's styles</p>
+        </div></div>
+        <div class="svc-close-hint">↓ tap to close</div>
+      </div>
+    </div>
+
+    <!-- Retwist / Locs -->
+    <div class="svc-card glass-card-dark aspect-square group">
+      <img class="svc-bg" src="svc-6.webp" alt="Retwist and locs hairstyle" loading="lazy"/>
+      <div class="svc-label">
+        <div class="svc-category-tag" style="--tag-color:#86efac">Locs</div>
+        <span class="font-headline-lg text-[20px] font-bold text-on-surface">Retwist & Locs</span>
+      </div>
+      <div class="svc-tap-hint">
+        <span class="hint-pricing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+          Tap for pricing
+        </span>
+        <span class="hint-picture">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Tap for picture
+        </span>
+      </div>
+      <div class="svc-overlay">
+        <p class="font-bold text-[#86efac] text-[15px] mb-2 tracking-wide uppercase">Retwist & Locs</p>
+        <div class="svc-price-list-wrap"><div class="svc-price-list">
+          <div class="svc-price-row"><span class="svc-price-label">40–50 locs</span><span class="svc-price-val" style="color:#86efac">$65</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">60–80 locs</span><span class="svc-price-val" style="color:#86efac">$85</span></div>
+          <div class="svc-price-row"><span class="svc-price-label">90–120 locs</span><span class="svc-price-val" style="color:#86efac">$110</span></div>
+          <div class="svc-price-row"><span class="svc-price-label font-bold text-white">Lock Revamp</span><span class="svc-price-val" style="color:#86efac">Consult</span></div>
+          <p class="svc-note">Lock Revamp requires consultation booking</p>
+        </div></div>
+        <div class="svc-close-hint">↓ tap to close</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<script>
+  /* tap toggle */
+  document.querySelectorAll('.svc-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const isOpen = card.classList.contains('tapped');
+      document.querySelectorAll('.svc-card.tapped').forEach(c => c.classList.remove('tapped'));
+      if (!isOpen) card.classList.add('tapped');
+    });
+  });
+  /* auto-demo first card */
+  (function() {
+    const first = document.querySelector('.svc-card');
+    if (!first) return;
+    const io = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        io.disconnect();
+        setTimeout(() => {
+          first.classList.add('tapped');
+          setTimeout(() => first.classList.remove('tapped'), 1800);
+        }, 600);
+      }
+    }, { threshold: 0.4 });
+    io.observe(first);
+  })();
+</script>
 <!-- Policies Section -->
 <style>
   @keyframes borderSpin {
@@ -456,7 +817,7 @@
     28%         { left: 120%; opacity: 1; }
     33%, 100%   { left: 120%; opacity: 0; }
   }
-  /* hidden by default */
+  /* hidden — revealed via CSS transition (no keyframes needed) */
   .rule-card {
     position: relative;
     border-radius: 20px;
@@ -466,19 +827,16 @@
     border: 1px solid rgba(255,255,255,0.06);
     overflow: hidden;
     opacity: 0;
-    /* transition only applied once revealed */
+    transform: translateY(32px) scale(0.97);
+    transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.34,1.2,0.64,1), box-shadow 0.35s ease;
   }
-  /* entry animation phase — no hover/ongoing effects yet */
+  /* scrolled into view */
   .rule-card.visible {
-    animation: revealCard 0.6s cubic-bezier(0.34,1.2,0.64,1) forwards;
-  }
-  /* settled state — animation done, hover + ongoing effects active */
-  .rule-card.revealed {
     opacity: 1;
-    transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.35s ease;
+    transform: translateY(0) scale(1);
   }
-  .rule-card.revealed:hover,
-  .rule-card.revealed:active {
+  .rule-card.visible:hover,
+  .rule-card.visible:active {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 30px var(--card-glow, rgba(255,77,204,0.2));
   }
@@ -500,9 +858,9 @@
     animation: borderSpin 4s ease infinite;
     pointer-events: none;
   }
-  .rule-card.revealed::before { opacity: 0.45; }
-  .rule-card.revealed:hover::before,
-  .rule-card.revealed:active::before { opacity: 1; }
+  .rule-card.visible::before { opacity: 0.45; }
+  .rule-card.visible:hover::before,
+  .rule-card.visible:active::before { opacity: 1; }
 
   /* shimmer sweep */
   .rule-card::after {
@@ -517,7 +875,7 @@
     opacity: 0;
     pointer-events: none;
   }
-  .rule-card.revealed::after {
+  .rule-card.visible::after {
     animation: autoShimmer var(--shimmer-period, 5s) ease infinite;
     animation-delay: var(--shimmer-delay, 0s);
   }
@@ -534,12 +892,12 @@
     border: 1px solid var(--icon-border, rgba(255,77,204,0.25));
     transition: box-shadow 0.3s ease;
   }
-  .rule-card.revealed .rule-icon-wrap {
+  .rule-card.visible .rule-icon-wrap {
     animation: floatIcon 2.2s ease-in-out infinite;
     animation-delay: var(--shimmer-delay, 0s);
   }
-  .rule-card.revealed:hover .rule-icon-wrap,
-  .rule-card.revealed:active .rule-icon-wrap {
+  .rule-card.visible:hover .rule-icon-wrap,
+  .rule-card.visible:active .rule-icon-wrap {
     box-shadow: 0 0 18px var(--card-glow, rgba(255,77,204,0.4));
   }
 
@@ -576,151 +934,571 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md" id="rulesGrid">
 
-    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#ff4dcc; --card-glow:rgba(255,77,204,0.25); --icon-bg:rgba(255,77,204,0.1); --icon-border:rgba(255,77,204,0.3); animation-delay:0s; --shimmer-delay:0.2s; --shimmer-period:5s">
+    <!-- 01 No Same-Day -->
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#ff4dcc;--card-glow:rgba(255,77,204,0.25);--icon-bg:rgba(255,77,204,0.1);--icon-border:rgba(255,77,204,0.3);animation-delay:0s;--shimmer-delay:0.2s;--shimmer-period:5s">
       <span class="rule-step">01</span>
+      <div class="rule-icon-wrap">
+        <span class="material-symbols-outlined text-[28px]" style="color:#ff4dcc">event_busy</span>
+      </div>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">No Same-Day Bookings</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Do not book hair or any other appointment same day. Plan ahead — your spot must be reserved in advance.</p>
+    </div>
+
+    <!-- 02 Deposit -->
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#ff4dcc;--card-glow:rgba(255,77,204,0.25);--icon-bg:rgba(255,77,204,0.1);--icon-border:rgba(255,77,204,0.3);animation-delay:0.1s;--shimmer-delay:1.2s;--shimmer-period:5.5s">
+      <span class="rule-step">02</span>
       <div class="rule-icon-wrap">
         <span class="material-symbols-outlined text-[28px]" style="color:#ff4dcc">monetization_on</span>
       </div>
-      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Booking Fee Required</h3>
-      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">A non-refundable fee is required to secure your appointment spot.</p>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">$15 Deposit Required</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">A non-refundable $15 deposit is required to hold your appointment. This amount is included in your total — it's not extra.</p>
     </div>
 
-    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#d1bcff; --card-glow:rgba(209,188,255,0.2); --icon-bg:rgba(209,188,255,0.1); --icon-border:rgba(209,188,255,0.3); animation-delay:0.1s; --shimmer-delay:1.2s; --shimmer-period:5.5s">
-      <span class="rule-step">02</span>
-      <div class="rule-icon-wrap" style="--icon-bg:rgba(209,188,255,0.1); --icon-border:rgba(209,188,255,0.3);">
-        <span class="material-symbols-outlined text-[28px]" style="color:#d1bcff">forum</span>
-      </div>
-      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">DM Confirmation</h3>
-      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">All bookings must be confirmed via Instagram Direct Message.</p>
-    </div>
-
-    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#ffaedd; --card-glow:rgba(255,174,221,0.2); --icon-bg:rgba(255,174,221,0.1); --icon-border:rgba(255,174,221,0.3); animation-delay:0.2s; --shimmer-delay:2.3s; --shimmer-period:4.8s">
+    <!-- 03 Cancellation -->
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#ffb4ab;--card-glow:rgba(255,180,171,0.2);--icon-bg:rgba(255,180,171,0.1);--icon-border:rgba(255,180,171,0.3);animation-delay:0.2s;--shimmer-delay:2.3s;--shimmer-period:4.8s">
       <span class="rule-step">03</span>
+      <div class="rule-icon-wrap">
+        <span class="material-symbols-outlined text-[28px]" style="color:#ffb4ab">cancel</span>
+      </div>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Cancellation Policy</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Cancellations are only accepted <strong class="text-on-surface">12 hours before</strong> your appointment. Cancel after that window and you will be banned from rebooking.</p>
+    </div>
+
+    <!-- 04 Squeeze-Ins -->
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#d1bcff;--card-glow:rgba(209,188,255,0.2);--icon-bg:rgba(209,188,255,0.1);--icon-border:rgba(209,188,255,0.3);animation-delay:0.3s;--shimmer-delay:0.6s;--shimmer-period:6s">
+      <span class="rule-step">04</span>
+      <div class="rule-icon-wrap">
+        <span class="material-symbols-outlined text-[28px]" style="color:#d1bcff">bolt</span>
+      </div>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Squeeze-In Fee</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Need to squeeze in last-minute? That's <strong class="text-on-surface">+$35</strong> on top of the deposit and service payment. No exceptions.</p>
+    </div>
+
+    <!-- 05 Confirmation + Location -->
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#ffaedd;--card-glow:rgba(255,174,221,0.2);--icon-bg:rgba(255,174,221,0.1);--icon-border:rgba(255,174,221,0.3);animation-delay:0.4s;--shimmer-delay:1.8s;--shimmer-period:5.2s">
+      <span class="rule-step">05</span>
       <div class="rule-icon-wrap">
         <span class="material-symbols-outlined text-[28px]" style="color:#ffaedd">pin_drop</span>
       </div>
-      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Location</h3>
-      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Services provided in DeSoto / Dallas area. Address sent upon confirmation.</p>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Address on Confirmation</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Address will be shared after your booking is confirmed. Services provided in the DeSoto / Dallas area.</p>
     </div>
 
-    <div class="rule-card p-lg flex flex-col gap-sm md:col-start-1 md:col-end-2 lg:col-start-2 lg:col-end-3" style="--card-color:#7000ff; --card-glow:rgba(112,0,255,0.25); --icon-bg:rgba(112,0,255,0.12); --icon-border:rgba(112,0,255,0.3); animation-delay:0.3s; --shimmer-delay:0.6s; --shimmer-period:6s">
-      <span class="rule-step">04</span>
+    <!-- 06 Confirmation CTA -->
+    <div class="rule-card p-lg flex flex-col gap-sm" style="--card-color:#7000ff;--card-glow:rgba(112,0,255,0.25);--icon-bg:rgba(112,0,255,0.12);--icon-border:rgba(112,0,255,0.3);animation-delay:0.5s;--shimmer-delay:2.8s;--shimmer-period:5.8s">
+      <span class="rule-step">06</span>
       <div class="rule-icon-wrap">
-        <span class="material-symbols-outlined text-[28px]" style="color:#b085ff">payments</span>
+        <span class="material-symbols-outlined text-[28px]" style="color:#b085ff">forum</span>
       </div>
-      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Payment</h3>
-      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Cash is highly preferred for the remaining balance. Small fee for digital payments.</p>
-    </div>
-
-    <div class="rule-card p-lg flex flex-col gap-sm md:col-start-2 md:col-end-3 lg:col-start-3 lg:col-end-4" style="--card-color:#ffb4ab; --card-glow:rgba(255,180,171,0.2); --icon-bg:rgba(255,180,171,0.1); --icon-border:rgba(255,180,171,0.3); animation-delay:0.4s; --shimmer-delay:1.8s; --shimmer-period:5.2s">
-      <span class="rule-step">05</span>
-      <div class="rule-icon-wrap">
-        <span class="material-symbols-outlined text-[28px]" style="color:#ffb4ab">schedule</span>
-      </div>
-      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Respect My Time</h3>
-      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Late fees apply after 10 minutes. Cancellations need 24hr notice.</p>
+      <h3 class="font-headline-lg text-[20px] font-bold text-on-surface mt-xs">Booking Confirmation</h3>
+      <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">Myvelle will reach out via call or DM to confirm your appointment and collect the deposit.</p>
     </div>
 
   </div>
+
+  <!-- Book Now CTA below policies — visible on all screen sizes -->
+  <div class="flex flex-col items-center gap-md mt-xl">
+    <p class="text-on-surface-variant text-sm">Read & understood? Let's get you booked.</p>
+    <a href="#booking" class="inline-flex items-center gap-3 px-lg py-sm rounded-full chrome-gradient text-on-primary-container font-label-sm text-label-sm uppercase tracking-widest neon-glow hover:scale-[0.98] active:scale-[0.97] transition-transform duration-150 font-bold">
+      <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+      Book Your Appointment
+    </a>
+  </div>
+
 </section>
 
 <script>
+  /* ── Rule Cards Scroll Reveal ── */
   (function() {
     const cards = document.querySelectorAll('#rulesGrid .rule-card');
+    // set stagger via transition-delay based on order
+    cards.forEach((card, i) => {
+      card.style.transitionDelay = `${i * 0.1}s`;
+    });
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const card = entry.target;
-          card.classList.add('visible');
-          card.addEventListener('animationend', () => {
-            card.classList.remove('visible');
-            card.classList.add('revealed');
-          }, { once: true });
-          observer.unobserve(card);
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.12 });
     cards.forEach(card => observer.observe(card));
   })();
 </script>
 <!-- Booking Form -->
-<section class="px-gutter py-xl max-w-4xl mx-auto section-py" id="booking">
-<div class="glass-card-dark rounded-[32px] p-xl relative overflow-hidden booking-card-pad">
-<div class="absolute top-[-50px] right-[-50px] w-48 h-48 bg-primary-container/20 rounded-full blur-[60px] pointer-events-none"></div>
-<div class="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-secondary/20 rounded-full blur-[60px] pointer-events-none"></div>
-<div class="relative z-10 text-center mb-xl">
-<h2 class="font-headline-lg text-on-surface mb-sm booking-heading">Request an Appointment</h2>
-<p class="text-on-surface-variant">Fill out the details below. Myvelle will slide in your DMs to confirm.</p>
-</div>
-<form class="relative z-10 flex flex-col gap-md" id="bookingForm" onsubmit="event.preventDefault(); document.getElementById('successMessage').classList.remove('hidden'); document.getElementById('formContent').classList.add('hidden');">
-<div class="flex flex-col gap-md" id="formContent">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-primary uppercase ml-2">Full Name</label>
-<input class="glass-input rounded-xl px-md py-3 w-full" placeholder="Jane Doe" required="" type="text"/>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-primary uppercase ml-2">Instagram Username</label>
-<input class="glass-input rounded-xl px-md py-3 w-full" placeholder="@yourhandle" required="" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-primary uppercase ml-2">Phone Number</label>
-<input class="glass-input rounded-xl px-md py-3 w-full" placeholder="(555) 000-0000" required="" type="tel"/>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-primary uppercase ml-2">Service Wanted</label>
-<select class="glass-input rounded-xl px-md py-3 w-full appearance-none" required="">
-<option disabled="" selected="" value="">Select a style...</option>
-<option value="knotless">Knotless Braids</option>
-<option value="sewin">Sew-in / Wig Install</option>
-<option value="color">Color &amp; Silk Press</option>
-<option value="trim">Maintenance Trim</option>
-<option value="custom">Custom Look</option>
-</select>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-primary uppercase ml-2">Preferred Date</label>
-<input class="glass-input rounded-xl px-md py-3 w-full [color-scheme:dark]" required="" type="date"/>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-primary uppercase ml-2">Preferred Time</label>
-<input class="glass-input rounded-xl px-md py-3 w-full [color-scheme:dark]" required="" type="time"/>
-</div>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-primary uppercase ml-2">Hair Inspiration / Notes</label>
-<textarea class="glass-input rounded-xl px-md py-3 w-full h-24 resize-none" placeholder="Tell me about your hair length, condition, or specific style details..."></textarea>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-primary uppercase ml-2">Inspiration Photo</label>
-<div class="glass-input rounded-xl p-md flex flex-col items-center justify-center border-dashed border-2 cursor-pointer hover:bg-surface-container/50 transition-colors">
-<span class="material-symbols-outlined text-[32px] text-on-surface-variant mb-2">upload_file</span>
-<span class="text-sm text-on-surface-variant">Click to upload or drag and drop</span>
-<input accept="image/*" class="hidden" type="file"/>
-</div>
-</div>
-<div class="flex items-center gap-sm mt-sm">
-<input class="w-5 h-5 rounded border-outline-variant bg-surface-container checked:bg-primary-container text-primary-container focus:ring-primary-container focus:ring-offset-background" id="agreement" required="" type="checkbox"/>
-<label class="text-sm text-on-surface-variant cursor-pointer select-none" for="agreement">I agree to pay the non-refundable booking fee and have read the policies.</label>
-</div>
-<button class="mt-md w-full px-xl py-4 rounded-xl chrome-gradient text-on-primary-container font-label-sm text-[14px] uppercase tracking-widest neon-glow hover:scale-[0.98] transition-transform duration-150 ease-in-out font-bold" type="submit">
-                            Send Booking Request
-                        </button>
-</div>
-<div class="hidden flex-col items-center justify-center py-xl text-center gap-md" id="successMessage">
-<div class="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-sm shadow-[0_0_30px_rgba(255,174,221,0.3)]">
-<span class="material-symbols-outlined text-[40px] text-primary">check_circle</span>
-</div>
-<h3 class="font-headline-lg text-[28px] text-on-surface">Request Received!</h3>
-<p class="text-on-surface-variant text-lg max-w-md">Your request has been received. Myvelle will confirm through DM shortly.</p>
-</div>
-</form>
-</div>
+<section class="px-gutter section-py" id="booking" style="padding-top:80px;padding-bottom:80px;">
+<div class="max-w-6xl mx-auto">
+
+  <!-- Section header -->
+  <div class="text-center mb-[48px]">
+    <p class="font-label-sm text-primary uppercase tracking-widest text-xs mb-3">Ready to glow up?</p>
+    <h2 class="font-headline-lg text-on-surface booking-heading" style="font-size:clamp(28px,4vw,44px);line-height:1.15;">Request an Appointment</h2>
+    <p class="text-on-surface-variant mt-3 text-base max-w-md mx-auto">Fill out the details below. Myvelle will reach out via call or DM to confirm.</p>
+  </div>
+
+  <!-- Desktop: two-column card layout | Mobile: single column -->
+  <div class="glass-card-dark rounded-[32px] relative overflow-hidden">
+    <!-- ambient glows -->
+    <div class="absolute top-[-60px] right-[-60px] w-72 h-72 bg-primary-container/15 rounded-full blur-[80px] pointer-events-none"></div>
+    <div class="absolute bottom-[-60px] left-[-60px] w-72 h-72 bg-secondary/15 rounded-full blur-[80px] pointer-events-none"></div>
+
+    <div class="relative z-10 flex flex-col lg:flex-row">
+
+      <!-- ── LEFT PANEL: Info sidebar (desktop only) ── -->
+      <div class="hidden lg:flex flex-col justify-between p-[48px] w-[340px] flex-shrink-0 border-r border-white/[0.06]">
+        <!-- Brand -->
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-primary" style="font-size:22px;">stylus_note</span>
+          </div>
+          <h3 class="font-headline-lg text-on-surface text-[22px] leading-tight mb-3">Book Your<br/>Next Look</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Send your request and Myvelle will reach out via call or DM to confirm availability and collect the deposit.</p>
+        </div>
+
+        <!-- What to expect -->
+        <div class="flex flex-col gap-4 my-8">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-primary" style="font-size:16px;">send</span>
+            </div>
+            <div>
+              <p class="text-on-surface text-sm font-semibold">Submit Request</p>
+              <p class="text-on-surface-variant text-xs mt-0.5">Fill out and send the form</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-primary" style="font-size:16px;">chat_bubble</span>
+            </div>
+            <div>
+              <p class="text-on-surface text-sm font-semibold">Confirmation</p>
+              <p class="text-on-surface-variant text-xs mt-0.5">Myvelle reaches out via call or DM</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-primary" style="font-size:16px;">payments</span>
+            </div>
+            <div>
+              <p class="text-on-surface text-sm font-semibold">Pay Deposit</p>
+              <p class="text-on-surface-variant text-xs mt-0.5">Non-refundable to hold your slot</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-primary" style="font-size:16px;">auto_awesome</span>
+            </div>
+            <div>
+              <p class="text-on-surface text-sm font-semibold">Get Slay'd</p>
+              <p class="text-on-surface-variant text-xs mt-0.5">Show up &amp; get your hair done</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Policies link -->
+        <a href="#policies" class="inline-flex items-center gap-2 text-xs text-primary/70 hover:text-primary transition-colors duration-200 cursor-pointer">
+          <span class="material-symbols-outlined" style="font-size:14px;">open_in_new</span>
+          Read policies before booking
+        </a>
+      </div>
+
+      <!-- ── RIGHT PANEL: The Form ── -->
+      <div class="flex-1 p-[28px] md:p-[40px] lg:p-[48px]">
+
+        <form class="flex flex-col gap-md" id="bookingForm" onsubmit="handleBookingSubmit(event);">
+          <div class="flex flex-col gap-[20px]" id="formContent">
+
+            <!-- Row 1: Name + Email -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px]">
+              <div class="flex flex-col gap-xs">
+                <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Full Name</label>
+                <input id="f-name" name="name" class="glass-input rounded-xl px-md py-3 w-full" placeholder="Jane Doe" required="" type="text"/>
+              </div>
+              <div class="flex flex-col gap-xs">
+                <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Email Address</label>
+                <input id="f-email" name="email" class="glass-input rounded-xl px-md py-3 w-full" placeholder="jane@email.com" required="" type="email"/>
+              </div>
+            </div>
+
+            <!-- Row 2: Phone + Instagram -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px]">
+              <div class="flex flex-col gap-xs">
+                <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Phone Number</label>
+                <input id="f-phone" name="phone" class="glass-input rounded-xl px-md py-3 w-full" placeholder="(555) 000-0000" required="" type="tel"/>
+              </div>
+              <div class="flex flex-col gap-xs">
+                <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Instagram <span class="text-on-surface-variant normal-case font-normal">(optional)</span></label>
+                <input id="f-instagram" name="instagram" class="glass-input rounded-xl px-md py-3 w-full" placeholder="@yourhandle" type="text"/>
+              </div>
+            </div>
+
+            <!-- Row 3: Date + Time -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px]">
+              <div class="flex flex-col gap-xs">
+                <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Preferred Date</label>
+                <input id="f-date" name="date" class="glass-input rounded-xl px-md py-3 w-full [color-scheme:dark]" required="" type="date"/>
+              </div>
+              <div class="flex flex-col gap-xs">
+                <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Preferred Time</label>
+                <input id="f-time" name="time" class="glass-input rounded-xl px-md py-3 w-full [color-scheme:dark]" required="" type="time"/>
+              </div>
+            </div>
+
+            <!-- Services section — full width -->
+            <div class="flex flex-col gap-xs" id="servicesSection">
+              <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Service(s) Wanted</label>
+              <div id="serviceRows" class="flex flex-col gap-sm"></div>
+            </div>
+
+            <!-- Row 3: Notes + Photo side-by-side on desktop -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
+              <div class="flex flex-col gap-xs">
+                <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Hair Notes</label>
+                <textarea id="f-notes" name="notes" class="glass-input rounded-xl px-md py-3 w-full resize-none" style="height:148px;" placeholder="Hair length, condition, or specific style details..."></textarea>
+              </div>
+              <div class="flex flex-col gap-xs">
+                <label class="font-label-sm text-primary uppercase ml-2" style="font-size:10px;letter-spacing:0.1em;">Inspiration Photo</label>
+                <div id="uploadZone" class="glass-input rounded-xl p-md flex flex-col items-center justify-center border-dashed border-2 border-primary/30 cursor-pointer hover:bg-surface-container/50 hover:border-primary/60 transition-all duration-200 relative" style="min-height:148px;">
+                  <div id="uploadPrompt" class="flex flex-col items-center gap-1 pointer-events-none">
+                    <span class="material-symbols-outlined text-primary/60" style="font-size:30px;">add_photo_alternate</span>
+                    <span class="text-sm text-on-surface-variant">Tap to upload or drag &amp; drop</span>
+                    <span class="text-xs text-on-surface-variant/50">JPG, PNG, WEBP — max 10 MB</span>
+                  </div>
+                  <div id="uploadPreview" class="hidden w-full flex-col items-center gap-sm">
+                    <div class="relative w-full">
+                      <img id="previewImg" src="" alt="Inspiration photo" class="w-full max-h-36 object-contain rounded-lg"/>
+                      <button type="button" id="removePhoto" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-black/60 flex items-center justify-center hover:bg-error/80 transition-colors">
+                        <span class="material-symbols-outlined text-white" style="font-size:16px;">close</span>
+                      </button>
+                    </div>
+                    <span id="uploadFileName" class="text-xs text-on-surface-variant truncate max-w-full px-2"></span>
+                  </div>
+                  <input accept="image/*" id="photoInput" class="hidden" type="file"/>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agreement + Submit -->
+            <div class="flex items-start gap-sm pt-sm border-t border-white/[0.06]">
+              <input class="w-5 h-5 rounded border-outline-variant bg-surface-container checked:bg-primary-container text-primary-container focus:ring-primary-container focus:ring-offset-background flex-shrink-0 mt-0.5" id="agreement" required="" type="checkbox"/>
+              <label class="text-sm text-on-surface-variant cursor-pointer select-none leading-snug" for="agreement">I agree to pay the non-refundable booking deposit and have read &amp; understood all policies.</label>
+            </div>
+
+            <button id="submitBtn" class="w-full px-xl py-4 rounded-xl chrome-gradient text-on-primary-container font-label-sm text-[14px] uppercase tracking-widest neon-glow hover:scale-[0.99] active:scale-[0.97] transition-transform duration-150 ease-in-out font-bold disabled:opacity-60 disabled:scale-100 disabled:cursor-not-allowed" type="submit">
+              <span id="submitBtnText">Send Booking Request</span>
+              <span id="submitBtnLoading" class="hidden items-center justify-center gap-2">
+                <svg class="animate-spin w-4 h-4" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="32" stroke-dashoffset="12"/></svg>
+                Sending...
+              </span>
+            </button>
+
+          </div>
+
+          <!-- Success state -->
+          <div class="hidden flex-col items-center justify-center py-xl text-center gap-md" id="successMessage">
+            <div class="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-sm shadow-[0_0_30px_rgba(255,174,221,0.3)]">
+              <span class="material-symbols-outlined text-primary" style="font-size:40px;">check_circle</span>
+            </div>
+            <h3 class="font-headline-lg text-[28px] text-on-surface">Request Received!</h3>
+            <p class="text-on-surface-variant text-lg max-w-md">Your request has been submitted. Myvelle will reach out to confirm via call or DM.</p>
+          </div>
+
+        </form>
+      </div><!-- end right panel -->
+
+    </div><!-- end flex row -->
+  </div><!-- end glass card -->
+
+</div><!-- end max-w -->
 </section>
+<script>
+  /* ── Booking Form Submission ── */
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxBsBHZ9m1iaii4_ZSFwPVH6f6AIcVJZ-fYhBDmA291Eg4xwQ_LCx4nBUudzTkwPTlddg/exec';
+
+  async function handleBookingSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+
+    // Collect services — iterate per slot so service+style stay paired
+    const slots = form.querySelectorAll('.svc-slot-card');
+    const servicesParts = [];
+    slots.forEach(slot => {
+      const svcSel   = slot.querySelector('.service-select');
+      const styleSel = slot.querySelector('.sub-style-select');
+      if (!svcSel || !svcSel.value) return;
+      const style = styleSel && styleSel.value ? ` (${styleSel.value})` : '';
+      servicesParts.push(svcSel.value + style);
+    });
+
+    const payload = {
+      name:      document.getElementById('f-name').value.trim(),
+      email:     document.getElementById('f-email').value.trim(),
+      instagram: document.getElementById('f-instagram').value.trim(),
+      phone:     document.getElementById('f-phone').value.trim(),
+      services:  servicesParts.join(' + ') || '—',
+      date:      document.getElementById('f-date').value,
+      time:      document.getElementById('f-time').value,
+      notes:     document.getElementById('f-notes').value.trim(),
+    };
+
+    // Loading state
+    const btn        = document.getElementById('submitBtn');
+    const btnText    = document.getElementById('submitBtnText');
+    const btnLoading = document.getElementById('submitBtnLoading');
+    btn.disabled = true;
+    btnText.classList.add('hidden');
+    btnLoading.classList.remove('hidden');
+    btnLoading.style.display = 'flex';
+
+    try {
+      await fetch(APPS_SCRIPT_URL, {
+        method:  'POST',
+        mode:    'no-cors',             // Required for Apps Script
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(payload),
+      });
+      // Show success (no-cors means we can't read the response — assume success)
+      document.getElementById('successMessage').classList.remove('hidden');
+      document.getElementById('successMessage').style.display = 'flex';
+      document.getElementById('formContent').classList.add('hidden');
+    } catch (err) {
+      // Restore button on network error
+      btn.disabled = false;
+      btnText.classList.remove('hidden');
+      btnLoading.classList.add('hidden');
+      alert('Something went wrong. Please try again or contact Myvelle directly.');
+    }
+  }
+
+  /* ── Dynamic Service Selection ── */
+  (function() {
+    const SERVICES = [
+      'Knotless Braids',
+      'Stitch Braids',
+      'Wig Installs',
+      'Quick Weaves',
+      "Men's Styles",
+      'Retwist & Locs'
+    ];
+
+    // Sub-styles per service
+    const SUB_OPTIONS = {
+      'Knotless Braids': [
+        'Large — $80',
+        'Medium Large — $90',
+        'Medium — $100',
+        'S-Medium — $120',
+        'Small — $130',
+        'XS — $160',
+        'Bob (Shoulder) — $110',
+        'Braided Ponytail — $140',
+        'Tribal / Lemonade — $130'
+      ],
+      'Stitch Braids': [
+        '6 Braids — $60',
+        '8 Braids — $80',
+        'Small — $115'
+      ],
+      'Wig Installs': [
+        'Full Install (Any Style) — $100',
+        'Touch Up — $50'
+      ],
+      'Quick Weaves': [
+        'Middle Part — $100',
+        'Side Part — $100',
+        'Flip Over — $100',
+        'Half Up Half Down — $110',
+        'Jayda Wayda Style — $120',
+        'Cassie Hairstyle — $130'
+      ],
+      "Men's Styles": [
+        '6 Stitch Braids — $65',
+        '8 Stitch Braids — $85'
+      ],
+      'Retwist & Locs': [
+        '40–50 Locs — $65',
+        '60–80 Locs — $85',
+        '90–120 Locs — $110',
+        'Lock Revamp — Consultation'
+      ]
+    };
+
+    const container = document.getElementById('serviceRows');
+    if (!container) return;
+
+    function getSelectedServices() {
+      return Array.from(container.querySelectorAll('.service-select'))
+        .map(s => s.value).filter(Boolean);
+    }
+
+    // Build a slot = service card with label, service dropdown, style dropdown
+    function buildSlot(slotIndex) {
+      const isFirst = slotIndex === 0;
+
+      // Outer card
+      const slot = document.createElement('div');
+      slot.className = 'service-slot svc-slot-card';
+
+      // ── Label
+      const label = document.createElement('span');
+      label.className = 'svc-slot-label';
+      label.textContent = isFirst ? 'Service' : 'Additional Service';
+      slot.appendChild(label);
+
+      // ── Remove btn (absolute top-right, non-first only)
+      if (!isFirst) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'svc-slot-remove';
+        btn.innerHTML = '<span class="material-symbols-outlined" style="font-size:14px;color:rgba(255,255,255,0.55)">close</span>';
+        btn.addEventListener('click', () => {
+          slot.remove();
+          syncOptions();
+          ensureTrailingSlot();
+        });
+        slot.appendChild(btn);
+      }
+
+      // ── Service dropdown
+      const sel = document.createElement('select');
+      sel.className = 'glass-input rounded-xl px-md py-3 w-full appearance-none service-select';
+      sel.name = 'service_' + (slotIndex + 1);
+      if (isFirst) sel.required = true;
+
+      const ph = document.createElement('option');
+      ph.disabled = true; ph.selected = true; ph.value = '';
+      ph.textContent = isFirst ? 'Select a service...' : 'Choose service...';
+      sel.appendChild(ph);
+
+      SERVICES.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s; opt.textContent = s;
+        sel.appendChild(opt);
+      });
+
+      slot.appendChild(sel);
+
+      // ── Style/size section (hidden until service chosen)
+      const styleSection = document.createElement('div');
+      styleSection.className = 'svc-style-section';
+      styleSection.style.display = 'none';
+
+      const styleLabel = document.createElement('span');
+      styleLabel.className = 'svc-style-label';
+      styleLabel.textContent = 'Size / Style';
+      styleSection.appendChild(styleLabel);
+
+      const subSel = document.createElement('select');
+      subSel.className = 'glass-input rounded-xl px-md py-3 w-full appearance-none sub-style-select';
+      subSel.name = 'style_' + (slotIndex + 1);
+
+      const subPh = document.createElement('option');
+      subPh.disabled = true; subPh.selected = true; subPh.value = '';
+      subPh.textContent = 'Select size / style...';
+      subSel.appendChild(subPh);
+      styleSection.appendChild(subSel);
+      slot.appendChild(styleSection);
+
+      // ── On service change
+      sel.addEventListener('change', () => {
+        const svc = sel.value;
+        if (!isFirst) label.textContent = svc;
+        syncOptions();
+
+        while (subSel.options.length > 1) subSel.remove(1);
+        const opts = SUB_OPTIONS[svc] || [];
+        opts.forEach(o => {
+          const opt = document.createElement('option');
+          opt.value = o; opt.textContent = o;
+          subSel.appendChild(opt);
+        });
+
+        if (opts.length > 1) {
+          styleSection.style.display = '';
+          subSel.required = true;
+        } else if (opts.length === 1) {
+          subSel.value = opts[0];
+          styleSection.style.display = 'none';
+          subSel.required = false;
+        } else {
+          styleSection.style.display = 'none';
+          subSel.required = false;
+        }
+
+        const slots = container.querySelectorAll('.service-slot');
+        if (slot === slots[slots.length - 1] && getSelectedServices().length < SERVICES.length) {
+          container.appendChild(buildSlot(slots.length));
+        }
+      });
+
+      return slot;
+    }
+
+    function syncOptions() {
+      const picked = getSelectedServices();
+      container.querySelectorAll('.service-select').forEach(sel => {
+        const own = sel.value;
+        Array.from(sel.options).forEach(opt => {
+          if (!opt.value) return;
+          opt.disabled = picked.includes(opt.value) && opt.value !== own;
+        });
+      });
+    }
+
+    function ensureTrailingSlot() {
+      const slots = container.querySelectorAll('.service-slot');
+      const lastSel = slots[slots.length - 1]?.querySelector('.service-select');
+      if (lastSel && lastSel.value && getSelectedServices().length < SERVICES.length) {
+        container.appendChild(buildSlot(slots.length));
+      }
+    }
+
+    // Init
+    container.appendChild(buildSlot(0));
+  })();
+</script>
+<script>
+  /* ── Inspiration Photo Upload ── */
+  (function() {
+    const zone      = document.getElementById('uploadZone');
+    const input     = document.getElementById('photoInput');
+    const prompt    = document.getElementById('uploadPrompt');
+    const preview   = document.getElementById('uploadPreview');
+    const img       = document.getElementById('previewImg');
+    const nameEl    = document.getElementById('uploadFileName');
+    const removeBtn = document.getElementById('removePhoto');
+    if (!zone) return;
+    function showPreview(file) {
+      if (!file || !file.type.startsWith('image/')) return;
+      if (file.size > 10 * 1024 * 1024) { alert('File too large — max 10 MB'); return; }
+      img.src = URL.createObjectURL(file);
+      nameEl.textContent = file.name;
+      prompt.classList.add('hidden');
+      preview.classList.remove('hidden');
+      preview.classList.add('flex');
+    }
+    function clearPhoto() {
+      img.src = ''; input.value = '';
+      preview.classList.add('hidden');
+      preview.classList.remove('flex');
+      prompt.classList.remove('hidden');
+    }
+    zone.addEventListener('click', e => {
+      if (e.target === removeBtn || removeBtn.contains(e.target)) return;
+      input.click();
+    });
+    input.addEventListener('change', () => { if (input.files[0]) showPreview(input.files[0]); });
+    removeBtn.addEventListener('click', e => { e.stopPropagation(); clearPhoto(); });
+    zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('border-primary','bg-primary/5'); });
+    zone.addEventListener('dragleave', () => { zone.classList.remove('border-primary','bg-primary/5'); });
+    zone.addEventListener('drop', e => {
+      e.preventDefault();
+      zone.classList.remove('border-primary','bg-primary/5');
+      if (e.dataTransfer.files[0]) showPreview(e.dataTransfer.files[0]);
+    });
+  })();
+</script>
 <!-- Final CTA -->
 <section class="px-gutter py-[100px] max-w-7xl mx-auto text-center relative">
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] h-full bg-primary-container/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
@@ -728,9 +1506,10 @@
 <h2 class="font-headline-xl text-transparent bg-clip-text bg-gradient-to-b from-white to-primary-container italic font-bold cta-heading">Ready for your Myvelle moment?</h2>
 <p class="font-body-md text-[20px] text-on-surface-variant mb-md">Book your next look and step out photo-ready.</p>
 <div class="flex flex-col sm:flex-row gap-margin justify-center w-full">
-<a class="px-xl py-md rounded-full bg-transparent border-2 border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:shadow-[0_0_20px_rgba(255,174,221,0.4)] transition-all duration-300 font-bold" href="#">
-                        Book Through Instagram
-                    </a>
+<a class="px-xl py-md rounded-full chrome-gradient text-on-primary-container font-label-sm text-label-sm uppercase tracking-widest neon-glow hover:scale-95 transition-transform duration-150 ease-in-out font-bold relative overflow-hidden group flex items-center justify-center" href="#">
+  <span class="relative z-10">Book Through Instagram</span>
+  <div class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
+</a>
 <a class="px-xl py-md rounded-full bg-surface-container border border-outline-variant text-on-surface font-label-sm text-label-sm uppercase tracking-widest hover:bg-surface-container-high transition-all duration-300 font-bold" href="#gallery">
                         View Gallery
                     </a>
@@ -752,17 +1531,29 @@
 <a class="text-on-surface-variant hover:text-primary-container underline underline-offset-4 transition-all hover:opacity-80 font-label-sm text-label-sm uppercase tracking-widest" href="#policies">Policies</a>
 </div>
 <div class="text-on-surface-variant text-sm text-center md:text-right">
-                © 2024 Myvelle Hair Kulture. stay extra.
+                © 2026 Myvelle Hair Kulture. stay extra.
             </div>
 </div>
 </footer>
+
+<!-- Created by -->
+<div style="background:#0a0310; border-top:1px solid rgba(255,174,221,0.08); padding:14px 24px; text-align:center;">
+  <a href="https://pinkleafstudiox.netlify.app/" target="_blank" rel="noopener noreferrer"
+     style="font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
+            color:rgba(247,217,248,0.3); text-decoration:none; transition:color 0.2s ease;"
+     onmouseover="this.style.color='rgba(255,174,221,0.7)'"
+     onmouseout="this.style.color='rgba(247,217,248,0.3)'">
+    Crafted by PinkLeaf Studio<span style="color:rgba(255,77,204,0.5);">X</span>
+  </a>
+</div>
+
 <script>
     const mobileMenuButton = document.getElementById('mobileMenuButton');
     const mobileMenu = document.getElementById('mobileMenu');
     const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
     function setMobileMenu(open) {
-        mobileMenu.classList.toggle('hidden', !open);
+        mobileMenu.classList.toggle('open', open);
         mobileMenuButton.setAttribute('aria-expanded', String(open));
     }
 
