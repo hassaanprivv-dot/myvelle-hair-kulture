@@ -1,2 +1,4 @@
 node_modules/
 gen-favicons.js
+src/
+.netlify/
