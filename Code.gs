@@ -4,8 +4,8 @@
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // ── CONFIG: Fill these in before deploying ──────────
-const SHEET_ID     = '1xj5YBKFNGm4glX6AY7sTpXjxGUlVbpbUvUE8p3vXLQA';
-const NOTIFY_EMAIL = 'hassaanprivv@gmail.com';
+const SHEET_ID     = '1HOymeARy2nkqN6Mdokuc3IvoY071GRmZNWPYJPhQtMA';
+const NOTIFY_EMAIL = 'myvelle.hair.kulture@gmail.com';
 // ───────────────────────────────────────────────────
 
 
