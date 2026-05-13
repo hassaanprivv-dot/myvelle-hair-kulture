@@ -39,7 +39,7 @@ function writeToSheet(data) {
 
   // Auto-header on first run
   if (sheet.getLastRow() === 0) {
-    const headers = ['Timestamp','Name','Instagram','Phone','Services','Date','Time','Notes','Status'];
+    const headers = ['Timestamp','Name','Email','Instagram','Phone','Services','Date','Time','Notes','Status'];
     sheet.appendRow(headers);
 
     const headerRange = sheet.getRange(1, 1, 1, headers.length);
@@ -56,6 +56,7 @@ function writeToSheet(data) {
   sheet.appendRow([
     new Date(),
     data.name        || '',
+    data.email       || '',
     data.instagram   || '',
     data.phone       || '',
     data.services    || '',
@@ -71,7 +72,7 @@ function writeToSheet(data) {
 function sendNotification(data) {
   MailApp.sendEmail({
     to:       NOTIFY_EMAIL,
-    subject:  `💜 New Booking — ${data.name || 'Someone'} wants an appointment`,
+    subject:  'New Booking - ' + (data.name || 'Someone') + ' wants an appointment',
     htmlBody: buildEmailHTML(data),
     name:     'Myvelle Hair Kulture'
   });
@@ -80,6 +81,7 @@ function sendNotification(data) {
 function buildEmailHTML(data) {
   const rows = [
     ['Name',           data.name],
+    ['Email',          data.email || '—'],
     ['Phone',          data.phone],
     ['Instagram',      data.instagram || '—'],
     ['Service(s)',     data.services],
