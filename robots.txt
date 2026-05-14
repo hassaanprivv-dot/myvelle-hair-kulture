@@ -2,6 +2,19 @@
 User-agent: *
 Allow: /
 
+# ── Google crawlers (explicitly permitted) ──
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
 # ── AI Search / Citation Crawlers (explicitly permitted) ──
 User-agent: GPTBot
 Allow: /
