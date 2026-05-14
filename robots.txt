@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://myvellehairkulture.netlify.app/sitemap.xml
