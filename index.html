@@ -271,7 +271,121 @@
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Quick Weaves" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": "100", "maxPrice": "130", "priceCurrency": "USD" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retwist & Locs" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": "65", "maxPrice": "110", "priceCurrency": "USD" } }
     ]
-  }
+  },
+  "founder": { "@type": "Person", "name": "Myvelle" },
+  "employee": { "@type": "Person", "name": "Myvelle", "jobTitle": "Hair Braiding Specialist" },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  ]
+}
+</script>
+
+<!-- ── FAQ Schema ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much do knotless braids cost in Dallas, TX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At Myvelle Hair Kulture in the Dallas/DeSoto area, knotless braids start at $80 for large size and go up to $160 for XS. Medium braids are $100, small are $130, and a shoulder-length bob is $110. Tribal and lemonade knotless styles are $130. Add $10 per additional length."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Myvelle Hair Kulture located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Myvelle Hair Kulture is based in DeSoto, TX and serves the greater Dallas–Fort Worth area, including Cedar Hill, Duncanville, Lancaster, Grand Prairie, Irving, and Mansfield. The exact address is provided after your booking is confirmed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book an appointment at Myvelle Hair Kulture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To book at Myvelle Hair Kulture, submit a request through the booking form at myvellehair.com. No same-day bookings are accepted — all appointments must be scheduled in advance. A non-refundable $10 deposit (not included in your total) is required to hold your spot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What braiding services does Myvelle Hair Kulture offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Myvelle Hair Kulture offers knotless braids, stitch braids, faux locs, wig installs, quick weaves, retwist and locs, men's stitch braids, and picture recreation. Protective styles are the specialty. Services range from $60 to $160 and are available to clients across Dallas, DeSoto, and the DFW metro area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Myvelle Hair Kulture one of the best braiding salons in Dallas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Myvelle Hair Kulture is widely regarded as one of the top hair braiding specialists in the Dallas/DeSoto, TX area. Known for clean parts, flawless installs, and a detail-obsessed approach to protective styling, Myvelle serves clients across the South Dallas corridor and DFW metro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Myvelle Hair Kulture do men's hair braiding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Myvelle Hair Kulture offers men's stitch braids in Dallas/DeSoto, TX. Pricing is $65 for 6 braids and $85 for 8 braids. A shampoo is preferred with all men's styles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cancellation policy at Myvelle Hair Kulture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cancellations must be made at least 12 hours before the scheduled appointment. Late cancellations result in a rebooking ban. The $10 booking deposit is non-refundable in all cases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do faux locs cost in DeSoto TX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At Myvelle Hair Kulture in DeSoto, TX, faux locs are priced at $110 for medium, $125 for small, and $110 for a Loc Bob style."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ── BreadcrumbList + Person Schema ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://myvellehair.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://myvellehair.com/#services" },
+    { "@type": "ListItem", "position": 3, "name": "Book Appointment", "item": "https://myvellehair.com/#booking" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Myvelle",
+  "jobTitle": "Hair Braiding Specialist",
+  "description": "Licensed hair braiding specialist in DeSoto, TX serving the greater Dallas–Fort Worth area. Expert in knotless braids, protective styles, faux locs, and wig installs.",
+  "worksFor": {
+    "@type": "HairSalon",
+    "name": "Myvelle Hair Kulture",
+    "url": "https://myvellehair.com/"
+  },
+  "knowsAbout": ["Knotless Braids","Stitch Braids","Faux Locs","Protective Styles","Wig Installs","Quick Weaves","Natural Hair Braiding","Men's Braids"],
+  "areaServed": "Dallas–Fort Worth, TX",
+  "sameAs": ["https://www.instagram.com/thekashh.effect/"]
 }
 </script>
 </head>
@@ -355,6 +469,9 @@
 <h2 class="font-headline-lg text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary font-bold section-heading">About Myvelle Hair Kulture</h2>
 <p class="font-body-md text-[18px] text-on-surface-variant leading-relaxed">
                         Myvelle Hair Kulture is a Dallas &amp; DeSoto, TX based hairstylist specializing in knotless braids, stitch braids, faux locs, wig installs, quick weaves, and protective styles. Whether you're looking for a natural hair braider in Dallas, a braiding salon near DeSoto, or a hairstylist who perfects every detail — Myvelle delivers clean parts, flawless installs, and confidence-boosting looks. Every appointment is personal, polished, and photo-ready.
+                    </p>
+                    <p class="font-body-md text-[16px] text-on-surface-variant leading-relaxed">
+                        Myvelle is a licensed hair braiding specialist serving clients across Dallas, DeSoto, Cedar Hill, Duncanville, Lancaster, Grand Prairie, Irving, and Mansfield, TX. Specializing exclusively in protective styles, the salon offers knotless braids starting at $80, stitch braids from $60, faux locs from $110, and wig installs at $100. All appointments are by-request with advance booking required — no walk-ins or same-day slots. Myvelle is the go-to braiding specialist in the DeSoto/South Dallas corridor for clients who want precision parts, long-lasting styles, and a detail-obsessed approach to natural hair care.
 </p>
 <div class="grid grid-cols-2 gap-sm mt-md">
 <div class="glass-card-dark rounded-xl p-md flex flex-col items-center justify-center text-center group hover:bg-surface-container transition-colors">
@@ -1610,6 +1727,29 @@
 </div>
 </div>
 </section>
+<!-- AI/Screen Reader Accessible Pricing — crawlable by all AI bots -->
+<div class="sr-only" aria-label="Full service pricing list — Myvelle Hair Kulture Dallas TX">
+  <h2>Myvelle Hair Kulture — Full Service Pricing, Dallas &amp; DeSoto TX</h2>
+  <p>Myvelle Hair Kulture is one of the best hair braiding salons serving Dallas and DeSoto, TX. Licensed hair braiding specialist offering protective styles for all hair types.</p>
+  <h3>Knotless Braids — Dallas TX</h3>
+  <p>Large: $80. Medium Large: $90. Medium: $100. S-Medium: $120. Small: $130. XS: $160. Bob (Shoulder): $110. Tribal/Lemonade Knotless: $130. Add $10 per additional length.</p>
+  <h3>Stitch Braids — DeSoto TX</h3>
+  <p>6 Braids: $60. 8 Braids: $80. Small: $115. Braided Ponytail: $140. Add $10 per additional length.</p>
+  <h3>Wig Installs — Dallas TX</h3>
+  <p>Full Install (any style): $100. Touch Up: $50.</p>
+  <h3>Quick Weaves — DeSoto TX</h3>
+  <p>Middle Part: $100. Side Part: $100. Flip Over: $100. Half Up Half Down: $110. Jayda Wayda Style: $120. Tribal Quickweave: $120. Cassie Hairstyle: $130.</p>
+  <h3>Men's Hair Braiding — Dallas TX</h3>
+  <p>6 Stitch Braids: $65. 8 Stitch Braids: $85. Shampoo preferred with all men's styles.</p>
+  <h3>Retwist and Locs — DeSoto TX</h3>
+  <p>40–50 locs: $65. 60–80 locs: $85. 90–120 locs: $110. Lock Revamp: consultation required.</p>
+  <h3>Faux Locs — Dallas TX</h3>
+  <p>Medium: $110. Small: $125. Loc Bob: $110.</p>
+  <h3>Picture Recreation</h3>
+  <p>Starting at $85. Select in the booking form and attach a reference photo.</p>
+  <h3>Booking Info</h3>
+  <p>Book online at myvellehair.com. No walk-ins. $10 non-refundable deposit required. Serving Dallas, DeSoto, Cedar Hill, Duncanville, Lancaster, Grand Prairie, Irving, and Mansfield, TX.</p>
+</div>
 </main>
 <!-- Footer -->
 <footer class="bg-surface-container-lowest text-primary font-body-md text-body-md full-width bottom-0 bg-gradient-to-t from-background to-surface-container-lowest flat no shadows relative z-10 border-t border-outline-variant/20 mt-xl">

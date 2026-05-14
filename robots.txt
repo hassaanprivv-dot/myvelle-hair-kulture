@@ -1,4 +1,40 @@
+# Standard crawlers
 User-agent: *
 Allow: /
+
+# ── AI Search / Citation Crawlers (explicitly permitted) ──
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Gemini-Bot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ── Training-only crawlers (block to protect content) ──
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
 
 Sitemap: https://myvellehair.com/sitemap.xml
