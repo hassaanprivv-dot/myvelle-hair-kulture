@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://myvellehairkulture.netlify.app/sitemap.xml
+Sitemap: https://myvellehair.com/sitemap.xml
